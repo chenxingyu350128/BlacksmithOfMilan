@@ -1,0 +1,42 @@
+<div class="all">
+    <div style="height: 20px;"></div>
+    <div class="addArticle">
+        <div class="title">{{title}}</div>
+        <div class="roleName">
+            <label for="roleName" >
+                角色名
+            </label>
+            <input id="roleName" ng-model="roleName" type="text">
+        </div>
+        <div class="permission">
+            <div ng-click="selectAll()">
+                <input id="all" type="checkbox"  ng-checked="all">
+                <span >
+                    全选/全不选
+                </span>
+            </div>
+            <div class="mainHeader" ng-repeat="x in list" on-finish-render-filters>
+                <label>
+                    <input class="title root"  value="{{x.id}}" ng-disabled="true" ng-checked="all"   type="checkbox">
+                    {{x.source}}
+                </label>
+                <div class="flex">
+                    <div ng-repeat="y in x.sonModules">
+                        <label>
+                            <input ng-checked="all"
+                                   value="{{y.id}}"
+                                   class="unit"
+                                   ng-click="single(y.id,y.parentId)"
+                                   type="checkbox" >
+                            {{y.source}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="keep">
+            <button  ng-click="cancel()" class="btn btn-danger">取消</button>
+            <button ng-click="save()"  class="btn btn-success">保存</button>
+        </div>
+    </div>
+</div>

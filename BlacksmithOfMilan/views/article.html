@@ -1,0 +1,35 @@
+<div class="Article">
+    <div class="head">
+        <span ui-sref="articleList"  class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+        <span class="headcenter">阅览室</span>
+    </div>
+    <div style="height: 60px;"></div>
+    
+    <div class="list">
+        <div class="contenttitle"><h4>{{vm.list.title}}</h4></div>
+        <div class="content">
+            
+            <div class="contentbottom">
+                <span class='time'>{{vm.list.updateAt|date : 'yyyy-MM-dd hh:mm:ss '}}</span>
+                <span class="author">{{vm.list.author}}</span>
+            </div>
+        </div>
+        
+    </div>
+    <p class="text">{{vm.list.textArticle}}</p>
+    <div class="updown">
+        <div ng-click="vm.whiteclick()">
+            <img style="width: 29px;height: 30px;"
+                 ng-src="{{vm.likeSrc(vm.liked)}}"
+                 alt="">
+        </div>
+        <div ng-click="vm.redclick()">
+            <img style="width: 29px;height: 30px;"
+                 ng-src="{{vm.collectSrc(vm.collected)}}"
+                 alt="">
+        </div>
+    </div>
+    
+</div>
+
+

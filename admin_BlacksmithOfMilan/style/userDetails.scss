@@ -1,0 +1,46 @@
+.studentDetails{
+  padding: 2rem;
+  overflow: hidden;
+  min-height: 100vh;
+  background: powderblue;
+  h3{
+    margin-bottom: 2rem;
+  }
+  .pull-left{
+    line-height: 4rem;
+    width: 40%;
+    p{
+      display: flex;
+      align-items: center;
+      padding: 1rem;
+      .title{
+        min-width: 5em;
+        font-weight: 600;
+      }
+      .addStyle{
+        flex: 1;
+        color: #050404;
+        background: #afccf8;
+        font-weight: 400;
+        border: 1px solid #74a9f5;
+        border-radius: 5px;
+        text-align: center;
+      }
+    }
+  }
+}
+.avatar{
+  padding-left: 5rem;
+  span{
+    font-weight: 600;
+  }
+  img{
+    padding: 2rem;
+    width: 200px;
+  }
+}
+.studentDetails .backBtn{
+  position: relative;
+  right: 88px;
+  top: 520px;
+}

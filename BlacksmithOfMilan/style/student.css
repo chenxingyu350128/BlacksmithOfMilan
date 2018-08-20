@@ -1,0 +1,48 @@
+.studentCenter {
+  position: absolute;
+  background: #fbf3d0;
+  min-height: 100vh;
+  width: 100%; }
+  .studentCenter .content {
+    overflow: hidden;
+    width: 90%;
+    margin: .7rem auto .3rem;
+    padding: .2rem .4rem .5rem;
+    background: url("../images/student/idCardBG.png") no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%; }
+    .studentCenter .content h3 {
+      margin-bottom: .2rem;
+      text-align: center;
+      color: #c66d08; }
+    .studentCenter .content .cardLeft {
+      float: left;
+      width: 50%; }
+      .studentCenter .content .cardLeft span {
+        color: #74a9f5;
+        cursor: pointer; }
+    .studentCenter .content .cardRight {
+      float: left;
+      width: 50%; }
+    .studentCenter .content img {
+      width: 80%;
+      margin-bottom: .1rem;
+      border: 2px solid #a7cee7; }
+    .studentCenter .content span {
+      padding: .05rem;
+      display: block; }
+  .studentCenter .submitBtn {
+    width: 90%;
+    margin: .2rem auto;
+    line-height: .5rem;
+    outline: none;
+    border: none;
+    background: #fcd32d;
+    color: #5f2500;
+    border-top: 2px solid rgba(95, 37, 0, 0.4);
+    border-radius: .1rem; }
+    .studentCenter .submitBtn img {
+      width: .35rem;
+      margin: .1rem .2rem; }
+
+/*# sourceMappingURL=student.css.map */

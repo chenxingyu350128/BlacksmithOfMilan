@@ -1,0 +1,26 @@
+<div ng-controller="accordion" class="accordion">
+    <div style="height: 5vh;"></div>
+    <div  class="top">
+        <div></div>
+        <div></div>
+        <div>
+                <button ng-click="logoff()" class="top1">注销</button>
+                <span class="top1"><a>{{username}}</a></span>
+                <span class="top1"><a>{{role}}</a></span>   
+        </div>
+    </div>
+    <div>
+        <div class="fex">
+            <div class="title"><b>后台首页</b> </div>
+            <div style="display: block"  class="ck" ng-repeat="x in sidebar" >
+                <button style="display: block" type="button" class="btn btn-default ck " ng-click="Turn($index)">{{x.firstLevel}}<span style="margin-left: 30px" class="glyphicon glyphicon-menu-right"></span></button>
+                <div uib-collapse="collapse[$index]"  >
+                    <div class="well well-lg" ng-repeat="set in x.secondLevel"  ui-sref="{{set.url}}">{{set.title}}</div>
+                </div>
+            </div>
+        </div>
+   
+            <div ui-view="" class="content" ></div>
+        </div>
+    </div>
+    

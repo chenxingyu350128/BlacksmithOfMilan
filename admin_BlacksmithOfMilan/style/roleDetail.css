@@ -1,0 +1,31 @@
+.roleName {
+  margin: 20px 0;
+  padding-left: 30px;
+  line-height: 50px;
+  height: 50px; }
+  .roleName label {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0; }
+  .roleName input {
+    height: 40px;
+    width: 160px;
+    margin-left: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid deepskyblue; }
+
+.permission {
+  padding: 30px; }
+
+.permission > div {
+  overflow: hidden;
+  line-height: 40px; }
+  .permission > div .flex {
+    overflow: hidden;
+    padding-left: 50px; }
+    .permission > div .flex div {
+      float: left;
+      width: 20vw; }
+
+/*# sourceMappingURL=roleDetail.css.map */

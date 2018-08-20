@@ -1,0 +1,159 @@
+html {
+  font-size: 625% !important; }
+
+body {
+  font-size: 14px;
+  min-height: 100vh; }
+
+.swap1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .15rem .2rem; }
+
+.header {
+  position: fixed;
+  left: 0;
+  padding: 0 .05rem;
+  line-height: .5rem; }
+  .header .fa {
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+    line-height: .5rem; }
+
+.fa::before {
+  padding: .05rem;
+  font-size: 25px;
+  vertical-align: bottom; }
+
+.title1 {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: #000; }
+
+.title2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  color: #fff; }
+
+.modal-dialog {
+  position: absolute;
+  top: 25%;
+  margin: 0;
+  width: 100%; }
+
+.homepage {
+  position: relative; }
+  .homepage .header {
+    position: fixed;
+    left: 0;
+    top: 0; }
+
+.swap1 {
+  padding: 0.25rem .2rem; }
+
+.map {
+  display: inline-block;
+  position: relative;
+  width: auto; }
+  .map .signIcon {
+    z-index: 88;
+    position: fixed;
+    right: 3%;
+    top: calc(2% + .5rem);
+    width: 75px;
+    height: 65px;
+    background: url("../images/home/signIcon.gif") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain; }
+  .map .idCard {
+    z-index: 88;
+    position: fixed;
+    right: 3%;
+    top: calc(15% + .5rem);
+    width: 75px;
+    height: 45px;
+    background: url("../images/home/idCard.gif") no-repeat;
+    -webkit-background-size: contain;
+    background-size: cover; }
+  .map .mainMap {
+    z-index: -99;
+    height: 100vh;
+    width: auto; }
+
+.innerMap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-background-size: contain;
+  background-size: contain; }
+  .innerMap img {
+    cursor: pointer; }
+  .innerMap .building {
+    width: 7.5%;
+    z-index: 66;
+    position: absolute;
+    left: 0;
+    top: 41.7%; }
+  .innerMap .article {
+    z-index: 66;
+    width: 24.4%;
+    position: absolute;
+    left: 10.2%;
+    bottom: 13%; }
+  .innerMap .restroom {
+    z-index: 66;
+    width: 22.84%;
+    position: absolute;
+    left: 6.2%;
+    top: 4.3%; }
+  .innerMap .video {
+    z-index: 66;
+    width: 31%;
+    position: absolute;
+    left: 28.6%;
+    top: 0; }
+  .innerMap .wishTree {
+    z-index: 66;
+    position: absolute;
+    bottom: 27%;
+    left: 46%;
+    width: 22%; }
+  .innerMap .notice {
+    z-index: 66;
+    position: absolute;
+    left: 45%;
+    bottom: 7.7%;
+    width: 10%; }
+  .innerMap .stadium {
+    z-index: 66;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 26%; }
+  .innerMap .shop {
+    z-index: 66;
+    position: absolute;
+    right: 10%;
+    bottom: 14%;
+    width: 19%; }
+
+.forbid {
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: .6; }
+
+/*# sourceMappingURL=home.css.map */

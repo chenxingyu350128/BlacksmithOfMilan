@@ -1,0 +1,48 @@
+<div class="articlelist">
+    <div class="head">
+        <span ui-sref="home"  class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+        <span class="headcenter">阅览室</span>      
+    </div>
+    <div style="height: 60px;"></div>
+
+    <div>
+        <div style="height: 305px">
+            <div uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                <div uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                    <img ng-click="urlClick1(slide.url)" ng-src="{{slide.image}}" style="margin:auto;height: 200px">
+                    <div class="carousel-caption">
+                        <h4>{{slide.text}}</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div ng-repeat="x in list" class="list" ng-click="vm.Describe(x.id)">
+        <div class="imgleft"><img style="width: 100px;height: 100px;" src="{{x.cover}}" alt="头像"></div>
+        <div class="content">
+            <div class="contenttitle"><h4>{{x.title}}</h4></div>
+            <div class="author">{{x.author}}</div>
+            <p class="text" maxlength="20" ng-model="describe" >{{sizeLimited(x.textArticle)}}</p>
+            <div class="contentbottom">
+                <span class="up">
+                    <img style="width: 20px;height: 20px;" ng-src="{{vm.likeSrc(x.liked)}}" alt="">
+                    <span>{{x.userLike}}</span>
+                </span>
+                <span class="break">
+                    <img style="width: 20px;height: 20px;" ng-src="{{vm.collectSrc(x.collected)}}" alt="">
+                    <span>{{x.collection}}</span>
+                </span>
+                <span class='time'><span>{{x.updateAt |timeFormat}}</span> <img src="../images/articleList/p2.png" alt=""></span>
+            </div>
+        </div>
+        
+    </div>
+    
+    <div ng-model="Click" ng-click="clickAdd()" class="loadbutton"><button>点击加载更多</button></div>
+    
+    
+    
+    
+    
+</div>

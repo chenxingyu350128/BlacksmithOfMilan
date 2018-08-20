@@ -1,0 +1,141 @@
+.myKeep {
+  background: #fbf3d0;
+  min-height: 100vh; }
+  .myKeep .bindMethod {
+    z-index: 9999;
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: .5rem;
+    padding: .05rem 0;
+    background: #ffe57e; }
+    .myKeep .bindMethod .bindBanner {
+      width: 47%;
+      text-align: center; }
+      .myKeep .bindMethod .bindBanner img {
+        width: 70%;
+        padding: 0.1rem; }
+    .myKeep .bindMethod .stick {
+      width: 3px;
+      height: 0.25rem;
+      background: #632a04; }
+    .myKeep .bindMethod .active {
+      border-bottom: 3px solid #fcc12e; }
+  .myKeep .ListOfVideo {
+    padding: .2rem; }
+    .myKeep .ListOfVideo .unitOfVideo {
+      position: relative;
+      padding: 0 .1rem;
+      margin-bottom: .2rem;
+      background: mediumpurple;
+      border-radius: 5px; }
+      .myKeep .ListOfVideo .unitOfVideo .boxTop {
+        display: flex;
+        align-items: center;
+        padding-bottom: .1rem; }
+        .myKeep .ListOfVideo .unitOfVideo .boxTop .topLeft {
+          display: inline-block; }
+          .myKeep .ListOfVideo .unitOfVideo .boxTop .topLeft img {
+            width: 14vw;
+            height: 14vw;
+            border-radius: 50%; }
+        .myKeep .ListOfVideo .unitOfVideo .boxTop .topRight {
+          padding: 0 .1rem;
+          color: #fff; }
+          .myKeep .ListOfVideo .unitOfVideo .boxTop .topRight p {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000; }
+          .myKeep .ListOfVideo .unitOfVideo .boxTop .topRight span {
+            padding: .05rem; }
+      .myKeep .ListOfVideo .unitOfVideo .main {
+        position: relative;
+        margin: 0 auto;
+        width: 80%;
+        padding: .1rem;
+        color: #fff; }
+        .myKeep .ListOfVideo .unitOfVideo .main .videoIcon {
+          position: absolute;
+          right: .1rem;
+          top: .1rem;
+          width: .4rem; }
+        .myKeep .ListOfVideo .unitOfVideo .main button {
+          z-index: 999;
+          position: relative;
+          margin: .2rem 0;
+          outline: none;
+          border-color: #fff;
+          background: none; }
+        .myKeep .ListOfVideo .unitOfVideo .main .bg {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          bottom: 0;
+          opacity: .4;
+          width: 100%;
+          height: 100%; }
+    .myKeep .ListOfVideo .footer {
+      position: relative;
+      width: 100%;
+      margin-top: .05rem;
+      left: 0;
+      bottom: 0; }
+      .myKeep .ListOfVideo .footer img {
+        padding: .03rem;
+        width: 8vw;
+        vertical-align: bottom; }
+      .myKeep .ListOfVideo .footer .pull-right {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%); }
+  .myKeep .ListOfArticle {
+    padding: .15rem; }
+    .myKeep .ListOfArticle .unitOfArticle {
+      display: flex;
+      height: 35vw;
+      margin: .1rem 0;
+      background: #afccf8;
+      border-radius: 10px; }
+      .myKeep .ListOfArticle .unitOfArticle .cover {
+        width: 35vw;
+        height: 35vw;
+        border: 5px solid #fcea6b; }
+      .myKeep .ListOfArticle .unitOfArticle .intro {
+        position: relative;
+        flex: 1;
+        padding: .05rem .05rem 0;
+        font-size: 12px;
+        background: deepskyblue; }
+        .myKeep .ListOfArticle .unitOfArticle .intro .A-Title {
+          font-size: 14px;
+          color: #afccf8;
+          padding: 0; }
+        .myKeep .ListOfArticle .unitOfArticle .intro p {
+          padding: 0.05rem 0 0; }
+        .myKeep .ListOfArticle .unitOfArticle .intro .footer {
+          position: absolute;
+          width: 100%;
+          margin-top: .05rem;
+          left: 0;
+          bottom: 0; }
+          .myKeep .ListOfArticle .unitOfArticle .intro .footer img {
+            padding: .03rem;
+            width: 8vw;
+            vertical-align: bottom; }
+          .myKeep .ListOfArticle .unitOfArticle .intro .footer .pull-right {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%); }
+  .myKeep .banner {
+    padding-top: 1.4rem; }
+  .myKeep .align {
+    padding-bottom: 10px; }
+  .myKeep .unitOfArticle .footer {
+    position: absolute; }
+
+/*# sourceMappingURL=myKeep.css.map */

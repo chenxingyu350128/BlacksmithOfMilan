@@ -1,0 +1,115 @@
+@charset "UTF-8";
+.all {
+  width: 90%;
+  margin-left: 5%;
+}
+.all .keep {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.addArticle::after {
+  display: block;
+  height: 0;
+  content: "";
+  clear: both;
+  visibility: hidden;
+}
+.addArticle {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.addArticle .title {
+  line-height: 40px;
+  padding: 10px 15px;
+  text-indent: 10px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.addArticle .addContent {
+  width: 80%;
+  margin-left: 10%;
+}
+.addArticle .titletext {
+  margin: 40px 0;
+}
+.addArticle .titletext input {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addArticle .classify {
+  margin: 40px 0;
+}
+.addArticle .classify select {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addArticle .show {
+  width: 90%;
+  margin-left: 40px;
+}
+.addArticle .author {
+  margin: 40px 0;
+}
+.addArticle .author input {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addArticle .abstract {
+  margin: 40px 0;
+}
+.addArticle .abstract textarea {
+  vertical-align: text-top;
+  width: 90%;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addArticle .lighter {
+  margin: 40px 0;
+}
+.addArticle .lighter .conta {
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-left: 45px;
+}
+.addArticle .lighter .conta .ng-valid .ta-bind .ng-dirty .ng-valid-parse .ng-empty .ng-touched {
+  width: 100%;
+}
+.addArticle .lighter .conta .ta-scroll-window > .ta-bind {
+  width: 75%;
+}
+.addArticle .keep {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.addArticle .textare2 {
+  vertical-align: text-top;
+  width: 90%;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addArticle .edito {
+  margin-left: 40px;
+  border: 1px solid #ccc;
+}
+.addArticle .edito .toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+.addArticle .edito .text {
+  height: 299px;
+}

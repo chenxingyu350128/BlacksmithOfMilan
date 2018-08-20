@@ -1,0 +1,28 @@
+<div class="studentCenter">
+    <div class="swap">
+        <div class="header title2 text-center btn-block">
+            <span ng-click="vm.back()" class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+            <span>学生证</span>
+        </div>
+    </div>
+    <div class="content">
+        <h3>学生卡</h3>
+        <div class="cardLeft">
+            <img  ng-src={{vm.avatar}} alt="">
+            <span ng-click="vm.studentEdit()">编辑</span>
+        </div>
+        <div class="cardRight">
+            <span>姓名：{{vm.username}}</span>
+            <span>年级：{{vm.grade|cardGrade}}</span>
+            <span>逆袭豆：{{vm.beans}}</span>
+        </div>
+    </div>
+    <div ng-click="vm.myKeep()" class="submitBtn">
+        <img src="../images/student/myKeepUI.png" alt="">
+        <span>我的收藏</span>
+    </div>
+    <div ng-click="vm.accountSet()" class="submitBtn">
+        <img src="../images/student/account&set.png" alt="">
+        <span>账号与绑定设置</span>
+    </div>
+</div>

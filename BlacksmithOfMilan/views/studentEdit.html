@@ -1,0 +1,67 @@
+<div class="cardEdit">
+    <div class="swap">
+        <div class="header title2 text-center btn-block">
+            <span ui-sref="student" class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+            <span>基本资料</span>
+        </div>
+    </div>
+    <div class="content" >
+        <h3>学生卡</h3>
+        <div class="cardLeft">
+            <div class="weui-gallery" id="gallery">
+                <span class="weui-gallery__img" id="galleryImg"></span>
+                <div class="weui-gallery__opr">
+                    <a href="javascript:" class="weui-gallery__del">
+                        <i class="weui-icon-delete weui-icon_gallery-delete"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="weui-cells weui-cells_form" style="margin-top: 0;background: none">
+                <div class="weui-cell">
+                    <div class="weui-cell__bd">
+                        <div class="weui-uploader">
+                            <div class="weui-uploader__bd">
+                                <ul class="weui-uploader__files" id="uploaderFiles">
+
+                                </ul>
+                                <div class="weui-uploader__input-box">
+                                    <input  id="uploaderInput" class="weui-uploader__input zjxfjs_file" type="file" accept="image/*" multiple="false">
+                                    <img class="oldImage" ng-src="{{vm.avatar}}" alt="">
+                                </div>
+                            </div>
+                            <div class="weui-uploader__hd">
+                                <p class="weui-uploader__title">头像更换</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form name="editArea" class="cardRight">
+            <div>
+                <span>姓名：</span>
+                <input ng-model="vm.nickName"
+                       required
+                       type="text">
+            </div>
+            <div>
+                <span>年级：</span>
+                <p id="showGrade"  ng-click="vm.gradePicker()">{{vm.grade|cardGrade}}</p>
+            </div>
+            <span>逆袭豆：{{vm.beans}}</span>
+        </form>
+    </div>
+    <div  class="submitBtn text-center">
+        <button ng-disabled="editArea.$invalid"
+                ng-click="vm.commitChange(vm.id)"
+                class="btn">
+            <img
+                    src="../images/student/saveChange.png"
+                    alt="">
+        </button>
+
+    </div>
+</div>
+
+<!--头像地址：-->
+<!--http://cdn.duitang.com/uploads/item/201508/30/20150830105732_nZCLV.jpeg-->

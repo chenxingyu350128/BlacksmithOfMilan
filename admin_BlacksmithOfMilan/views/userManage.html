@@ -1,0 +1,132 @@
+<div class="companySearch">
+    <div>
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">昵&emsp;称</span>
+                    <input type="text"
+                           class=" col-md-8 form-control"
+                           ng-model="nickName"
+                           required/>
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">I&emsp;&emsp;D</span>
+                    <input type="text"
+                           class=" col-md-8 form-control"
+                           ng-model="userId"
+                           required/>
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">年&emsp;级</span>
+                    <select ng-model="grade"
+                            class="form-control col-md-8">
+                        <option ng-repeat="x in gradeList" value="{{x.numb}}">{{x.site}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">手&emsp;机</span>
+                    <input type="text"
+                           class="form-control col-md-8"
+                           ng-model="tel">
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">邮&emsp;箱</span>
+                    <input type="text"
+                           class="form-control col-md-8"
+                           ng-model="email">
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">状&emsp;态</span>
+                    <select ng-model="status"
+                            class="form-control col-md-8">
+                        <option ng-repeat="x in statusList" value="{{x.value}}">{{x.status}}</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">逆袭豆</span>
+                    <input type="text"
+                           class="form-control col-md-8"
+                           ng-model="minScore">
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">~&emsp;</span>
+                    <input type="text"
+                           class="form-control col-md-8"
+                           ng-model="maxScore">
+                </div>
+            </div>
+            <div class="form-group col-md-4 col-sm-12 col-xs-12">
+                <div class="row">
+                    <span class="col-md-4">所在区域</span>
+                    <input type="text"
+                           class="form-control col-md-8"
+                           ng-model="address">
+                </div>
+            </div>
+        </div>
+        <div class="row bottomRow text-right">
+            <div class="col-md-4 pull-right">
+                <a class="pull-right btn btn-success" ng-click="search()">搜索</a>
+                <a class="pull-right btn btn-danger" ng-click="clear()">清空</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="companyList ">
+    <div class="listHeader">
+        <span> 用户管理</span>
+        <span>(用户总数：{{total}})</span>
+    </div>
+    <div class="tableSurface">
+        <table class="companyDetail text-center table-striped">
+            <tr>
+                <th colspan="2" class="btn-lg">序号</th>
+                <th colspan="3" class="btn-lg">ID</th>
+                <th colspan="3" class="btn-lg">昵称</th>
+                <th colspan="3" class="btn-lg">邮箱</th>
+                <th colspan="3" class="btn-lg">手机号</th>
+                <th colspan="3" class="btn-lg">逆袭豆</th>
+                <th colspan="2" class="btn-lg">年级</th>
+                <th colspan="3" class="btn-lg">所在区域</th>
+                <th colspan="3" class="btn-lg">状态</th>
+                <th colspan="3" class="btn-lg">操作</th>
+            </tr>
+            <tr ng-repeat="x in userList">
+                <td colspan="2" class="btn-lg">{{$index+1}}</td>
+                <td colspan="3" class="btn-lg">{{x.id}}</td>
+                <td colspan="3" class="btn-lg">{{x.nickName}}</td>
+                <td colspan="3" class="btn-lg">{{x.email}}</td>
+                <td colspan="3" class="btn-lg">{{x.tel}}</td>
+                <td colspan="3" class="btn-lg">{{x.score}}</td>
+                <td colspan="2" class="btn-lg">{{x.grade|gradeCode}}</td>
+                <td colspan="4" class="btn-lg">{{x.address}}</td>
+                <td colspan="1" class="btn-lg">{{x.status|FrozenCode}}</td>
+                <td colspan="3" class="btn-lg">
+                    <div class="threeBtn">
+                        <span class="btn btn-success btn-sm" style="cursor: pointer" ng-click="viewUser(x.id)">查看</span>
+                        <span ng-class="{'btn-primary': x.status===0,'btn-info': x.status===1}" class="btn  btn-sm" style="cursor: pointer" ng-click="freeze(x.id,x.status)">{{x.status|statusHandle}}</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<page-model page="page" total="total" size="size"></page-model>

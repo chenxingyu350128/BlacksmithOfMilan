@@ -1,0 +1,70 @@
+<div style="height: 60px;"></div>
+<div  class="tc"   style="margin-bottom: 40px">
+    <form  name="myForm" ng-submit="PostForm()"  >
+        <div class="title">添加老师</div>
+        <div class="name">老师昵称：<input ng-model="teacherNm" type="text" name="Userteacher"  required  />
+            <span style="color:red" ng-show="myForm.Userteacher.$dirty && myForm.Userteacher.$invalid">
+                <span ng-show="myForm.Userteacher.$error.pattern">请输入8到18位的用户名</span>
+                <span ng-show="myForm.Userteacher.$error.required">用户名不能为空</span>
+            </span>
+        </div>
+        <div class="containe">
+           
+            <label class="btn btn-success"  for="loade" ng-disabled="five">上传文件</label>
+            <input type="file" style="opacity: 0;"  nv-file-select="" id="loade" uploader="uploader" />
+         
+            <br/>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="50%">文件名</th>
+                    <th ng-show="uploader.isHTML5">文件大小</th>
+                    <th ng-show="uploader.isHTML5">进程</th>
+                    <th>状态</th>
+                    <th>动作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in uploader.queue">
+                    <td>
+                        <strong>{{ item.file.name }}</strong>
+                 
+                        <!--图片预览-->
+                        <img style="max-width: 200px;" alt="配图预览" id="img-preview" ng-src="{{iconUrl}}">
+                     
+                    </td>
+                    <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                    <td ng-show="uploader.isHTML5">
+                        <div class="progress" style="margin-bottom: 0;">
+                            <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                        </div>
+                    </td>
+                    <td class="text-center">
+                        <span ng-show="item.isSuccess">
+                            <i class="glyphicon glyphicon-ok"></i>
+                        </span>
+                        <span ng-show="item.isCancel">
+                            <i class="glyphicon glyphicon-ban-circle"></i>
+                        </span>
+                        <span ng-show="item.isError">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </span>
+                    </td>
+                    <td nowrap>
+                        <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                            <span class="glyphicon glyphicon-upload"></span> Upload
+                        </button>
+                        <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                            <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                        </button>
+                        <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                            <span class="glyphicon glyphicon-trash"></span> Remove
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="button"><button class="btn btn-success" ng-model="keeptr" ng-click="keepTR()" ng-disabled="myForm.$invalid">保存</button> <button class="btn btn-danger" ng-model="cancel" ng-click="CancelTR()">取消</button></div>
+    </form>
+</div>

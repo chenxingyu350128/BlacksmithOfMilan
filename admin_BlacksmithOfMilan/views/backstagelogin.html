@@ -1,0 +1,30 @@
+<!-- <h1 >后台登陆界面</h1> -->
+<span style="width: 100px" ui-sref="pageTab.articleList">
+        <a class="deleut" href="">
+            <div class="accordion-inner" ng-click="on3()" ng-class="{ 'btn-danger': cc}">
+                登陆主页
+            </div>
+        </a>
+    </span>
+            <div class="bigbox">
+                 
+                    <div class="box">
+                        <h2>后台登录</h2>
+                        <div class="user">
+                            <img src="./img/page3.png">
+                            <input type="text" ng-model="vm.username" id="zhanghao" placeholder="请输入账号">
+                            <span ng-model="Admin" ng-show="admin" style="color: red">账户不存在</span>
+                        </div>
+                        <div class="word">
+                            <img src="./img/page2.png">
+                            <input type="password" ng-model="vm.password" id="mima" placeholder="请输入密码">
+                            <span ng-model="Pass" ng-show="password" style="color: red">密码错误</span>
+                        </div>
+                        <p class="text" id="tex">
+                        </p>
+                        <div class="foot">
+                            <button class="entry" ng-click="vm.login()" id="logn">登录</button>
+                        </div>
+                    </div>
+                  
+                </div>

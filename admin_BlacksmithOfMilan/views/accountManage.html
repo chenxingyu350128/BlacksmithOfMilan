@@ -1,0 +1,58 @@
+<div class="accountManage">
+    <div class="search">
+        <div style="height:20px ;"></div>
+        <div>
+            <span>
+                角色：<select style="width: 200px" ng-change="test()" ng-model="rolea" ng-options="x.id as x.site for  x in rolelist" >          
+                        <option value="">全部</option>
+                    <!-- <option ng-repeat="x in rolelist" value="{{x.numb}}">{{x.site}}</option> -->
+                </select>
+            </span>
+            <span>
+                用户名：<input ng-model="text1" ng-change="change1text()" type="text">&emsp;  
+            </span>
+        </div>
+        <button ng-click="rest()" class="btn btn-warning">重置</button>
+        <button ng-click="searchon()"  class="btn btn-success">搜索</button>
+    </div>
+    <div class="Artcle"> 
+        <div class="add">
+            <span>用户列表（拖动列表，拖动后就算编辑）</span><button ng-model=" addtext" ng-click="addText()">新增</button>
+        </div>
+        <table class="td">
+            <tr>
+                <td class="td1">id</td>
+                <td class="td2">登陆名</td>
+                <td class="td3">角色</td>
+                <td class="td4">创建人</td>
+                
+                <td class="td7">修改时间</td>
+                
+                <td class="td8">操作</td>
+            </tr>
+        </table>
+        <table ng-repeat="x in list">
+            <tr class="tf">
+                <td class="td1">{{$index+1}}</td>
+                <td class="td2">
+                    {{x.username}}
+                </td>
+                <td class="td3">{{x.roleName}}</td>
+                <td class="td4">{{x.usernameC }}</td>
+                
+                <td class="td7">{{x.createAt | date : 'yyyy-MM-dd hh:mm:ss '}}</td>
+                
+                <td class="td8">
+                    
+                    <button class="button2" ng-click="onlineEditor(x.userId)">编辑</button>
+                    <button class="button3" ng-click="delete(x.userId)">删除</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="page">
+        <ul uib-pagination total-items="bigTotalItems" previous-text="上一页" next-text="下一页" ng-model="bigCurrentPage" ng-change="pageChanged()" max-size="maxSize" class="pagination-sm" boundary-link-numbers="true" rotate="false"></ul>
+        <div>去第<input type="text" style="width: 70px;height: 30px;margin: 20px;" ng-change="changepage()"  ng-model="pagenum" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') " name="f_order" /><button ng-click="entry()">确定</button></div>
+        
+    </div>
+</div>

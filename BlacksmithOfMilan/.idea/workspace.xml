@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="1c47d382-3d5f-4586-9eba-674b1dd722ee" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/images/home/video.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/home/video.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/signIn/beanIconBG.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/signIn/beanIconBG.png" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path=".idea/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="BlacksmithOfMilan" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.43615675">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="article.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/article.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="624">
+                  <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="studentEdit.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/script/controller/studentEdit.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2002">
+                  <caret line="77" column="40" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="student.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/script/controller/student.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="234">
+                  <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="videoList.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/script/controller/videoList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="130">
+                  <caret line="5" selection-start-line="5" selection-end-line="6" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signIcon.gif" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/images/home/signIcon.gif">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/home.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="364">
+                  <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="restroom.png" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/images/home/restroom.png">
+              <provider selected="true" editor-type-id="images" />
+            </entry>
+          </file>
+          <file leaf-file-name="home.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/style/home.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-1230">
+                  <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/style/home.css">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="myKeep.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/myKeep.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="824">
+                  <caret line="60" column="38" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="38" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="videoList.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/views/videoList.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="156">
+                  <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+                  <folding>
+                    <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#1;n#div#4;n#div#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="student.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/student.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="studentEdit.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/studentEdit.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1248">
+                  <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="home.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/script/controller/home.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="498">
+                  <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myKeep.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/script/controller/myKeep.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="video.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/views/video.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="520">
+                  <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="filter.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/script/filter/filter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="624">
+                  <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="constant.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/script/constant/constant.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="52">
+                  <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myKeep.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/style/myKeep.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2080">
+                  <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#609#1987#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="myKeep.css" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/style/myKeep.css">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML4 File" />
+        <option value="HTML File" />
+        <option value="SCSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>u/u</find>
+      <find>_handle</find>
+      <find>setI</find>
+      <find>ajax</find>
+      <find>handle</find>
+      <find>current-date</find>
+      <find>han</find>
+      <find>$sign</find>
+      <find>count</find>
+      <find>/bsom</find>
+      <find>/u/u</find>
+      <find>vm</find>
+      <find>.$</find>
+      <find>bannerV</find>
+      <find>banner</find>
+      <find>bannerimg</find>
+      <find>id</find>
+      <find>$scope.articleimg</find>
+      <find>putVideoLike</find>
+      <find>seo</find>
+      <find>url</find>
+      <find>selectGrade</find>
+      <find>|</find>
+      <find>params</find>
+      <find>gradeone</find>
+      <find>select</find>
+      <find>$vm</find>
+      <find>ng-click</find>
+      <find>全部</find>
+      <find>.png</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>homePage</replace>
+      <replace>bsom/u</replace>
+      <replace>handle</replace>
+      <replace>bsom</replace>
+      <replace>let</replace>
+      <replace>/u</replace>
+      <replace>.</replace>
+      <replace>$scope.bannerimg</replace>
+      <replace>articleimg</replace>
+      <replace>gradesites</replace>
+      <replace>.gif</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/script/directive/public.js" />
+        <option value="$PROJECT_DIR$/style/sign.css" />
+        <option value="$PROJECT_DIR$/style/sign.scss" />
+        <option value="$PROJECT_DIR$/script/directive/forNg-repeatDom.js" />
+        <option value="$PROJECT_DIR$/wei.html" />
+        <option value="$PROJECT_DIR$/script/directive/uploadImage/jqweui_upload.js" />
+        <option value="$PROJECT_DIR$/script/directive/uploadImage/uploadImage.js" />
+        <option value="$PROJECT_DIR$/script/directive/uploadImage/uploadImage.html" />
+        <option value="$PROJECT_DIR$/views/bindingInfo.html" />
+        <option value="$PROJECT_DIR$/style/student.scss" />
+        <option value="$PROJECT_DIR$/style/iscroll.css" />
+        <option value="$PROJECT_DIR$/style/bindInfo.scss" />
+        <option value="$PROJECT_DIR$/script/building.html" />
+        <option value="$PROJECT_DIR$/style/building.scss" />
+        <option value="$PROJECT_DIR$/views/building.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/views/sign.html" />
+        <option value="$PROJECT_DIR$/style/commonStyle.scss" />
+        <option value="$PROJECT_DIR$/style/article.less" />
+        <option value="$PROJECT_DIR$/views/bindOver.html" />
+        <option value="$PROJECT_DIR$/style/studentEdit.scss" />
+        <option value="$PROJECT_DIR$/script/factory/commonUnit.js" />
+        <option value="$PROJECT_DIR$/script/factory/ajaxUrl.js" />
+        <option value="$PROJECT_DIR$/script/factory/projectService.js" />
+        <option value="$PROJECT_DIR$/script/controller/video.js" />
+        <option value="$PROJECT_DIR$/script/controller/upload.js" />
+        <option value="$PROJECT_DIR$/script/controller/articleList.js" />
+        <option value="$PROJECT_DIR$/script/constant/constant.js" />
+        <option value="$PROJECT_DIR$/style/videoList.less" />
+        <option value="$PROJECT_DIR$/script/controller/bindingInfo.js" />
+        <option value="$PROJECT_DIR$/script/controller/bindOver.js" />
+        <option value="$PROJECT_DIR$/script/controller/building.js" />
+        <option value="$PROJECT_DIR$/script/config/app.js" />
+        <option value="$PROJECT_DIR$/views/articleList.html" />
+        <option value="$PROJECT_DIR$/views/article.html" />
+        <option value="$PROJECT_DIR$/script/controller/article.js" />
+        <option value="$PROJECT_DIR$/script/controller/signIn.js" />
+        <option value="$PROJECT_DIR$/views/video.html" />
+        <option value="$PROJECT_DIR$/script/filter/filter.js" />
+        <option value="$PROJECT_DIR$/views/student.html" />
+        <option value="$PROJECT_DIR$/views/studentEdit.html" />
+        <option value="$PROJECT_DIR$/script/controller/studentEdit.js" />
+        <option value="$PROJECT_DIR$/script/controller/student.js" />
+        <option value="$PROJECT_DIR$/views/myKeep.html" />
+        <option value="$PROJECT_DIR$/style/myKeep.scss" />
+        <option value="$PROJECT_DIR$/script/controller/home.js" />
+        <option value="$PROJECT_DIR$/script/controller/myKeep.js" />
+        <option value="$PROJECT_DIR$/views/videoList.html" />
+        <option value="$PROJECT_DIR$/script/controller/videoList.js" />
+        <option value="$PROJECT_DIR$/style/home.scss" />
+        <option value="$PROJECT_DIR$/views/home.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NamedScopeManager">
+    <order>
+      <scope name="sass" />
+    </order>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="55" />
+    <option name="y" value="-8" />
+    <option name="width" value="1940" />
+    <option name="height" value="913" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="BlacksmithOfMilan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlacksmithOfMilan" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlacksmithOfMilan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlacksmithOfMilan" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlacksmithOfMilan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlacksmithOfMilan" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BlacksmithOfMilan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BlacksmithOfMilan" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/admin_BlacksmithOfMilan" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\BlacksmithOfMilan\images\home" />
+      <recent name="E:\BlacksmithOfMilan\images\student" />
+      <recent name="E:\BlacksmithOfMilan" />
+      <recent name="E:\BlacksmithOfMilan\script" />
+      <recent name="E:\BlacksmithOfMilan\images\signIn" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\BlacksmithOfMilan\views" />
+      <recent name="E:\BlacksmithOfMilan\images\student" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\views\videoList.html</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\views\articleList.html</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\views\article.html</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\views\video.html</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\articleList.css</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\videoList.less</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\article.css</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\video.less</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\articleList.less</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\article.less</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\videoList.css</PATH>
+          <PATH vcs="svn" revision="26231">E:\BlacksmithOfMilan\style\video.css</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\99198\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BlacksmithOfMilan" />
+          <option name="myCopyRoot" value="E:\BlacksmithOfMilan" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="E:\BlacksmithOfMilan" />
+          <option name="myCopyRoot" value="E:\BlacksmithOfMilan" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c47d382-3d5f-4586-9eba-674b1dd722ee" name="Default" comment="" />
+      <created>1532003661952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532003661952</updated>
+      <workItem from="1532003663879" duration="594000" />
+      <workItem from="1532004889146" duration="7936000" />
+      <workItem from="1532051867048" duration="17437000" />
+      <workItem from="1532135573733" duration="11214000" />
+      <workItem from="1532169458057" duration="4421000" />
+      <workItem from="1532225846097" duration="11749000" />
+      <workItem from="1532309175416" duration="14242000" />
+      <workItem from="1532397898617" duration="1700000" />
+      <workItem from="1532401245212" duration="27428000" />
+      <workItem from="1532482907575" duration="301000" />
+      <workItem from="1532484887518" duration="31852000" />
+      <workItem from="1532568260554" duration="1169000" />
+      <workItem from="1532569438037" duration="2629000" />
+      <workItem from="1532572553668" duration="12687000" />
+      <workItem from="1532610418486" duration="7632000" />
+      <workItem from="1532652412419" duration="32042000" />
+      <workItem from="1532739019497" duration="17563000" />
+      <workItem from="1532826202512" duration="20347000" />
+      <workItem from="1532864058325" duration="11800000" />
+      <workItem from="1532913195373" duration="4911000" />
+      <workItem from="1532919417640" duration="19158000" />
+      <workItem from="1532956683927" duration="10000" />
+      <workItem from="1532956702737" duration="1363000" />
+      <workItem from="1532958330210" duration="914000" />
+      <workItem from="1532959279046" duration="1478000" />
+      <workItem from="1532964276448" duration="1240000" />
+      <workItem from="1532971591762" duration="5170000" />
+      <workItem from="1533085423037" duration="9125000" />
+      <workItem from="1533137399884" duration="2512000" />
+      <workItem from="1533177287914" duration="30680000" />
+      <workItem from="1533259622304" duration="1745000" />
+      <workItem from="1533264949270" duration="21716000" />
+      <workItem from="1533344037662" duration="21314000" />
+      <workItem from="1533430132908" duration="14886000" />
+      <workItem from="1533516209067" duration="9063000" />
+      <workItem from="1533534156745" duration="3481000" />
+      <workItem from="1533543036498" duration="10827000" />
+      <workItem from="1533602429698" duration="27889000" />
+      <workItem from="1533691754317" duration="24352000" />
+      <workItem from="1533739808776" duration="1724000" />
+      <workItem from="1533777224470" duration="9998000" />
+      <workItem from="1533805182914" duration="3764000" />
+      <workItem from="1533863444793" duration="18508000" />
+      <workItem from="1533900475593" duration="7647000" />
+      <workItem from="1533948836297" duration="22777000" />
+      <workItem from="1533981866462" duration="2778000" />
+      <workItem from="1534050085459" duration="8207000" />
+      <workItem from="1534090720880" duration="665000" />
+      <workItem from="1534091475708" duration="1235000" />
+      <workItem from="1534123051199" duration="10504000" />
+      <workItem from="1534207442621" duration="10709000" />
+      <workItem from="1534241692531" duration="9628000" />
+      <workItem from="1534294185243" duration="1297000" />
+      <workItem from="1534297004105" duration="13932000" />
+      <workItem from="1534351095511" duration="7646000" />
+      <workItem from="1534379755751" duration="11323000" />
+      <workItem from="1534408309028" duration="47018000" />
+      <workItem from="1534554276034" duration="5511000" />
+      <workItem from="1534578371411" duration="22214000" />
+      <workItem from="1534744988578" duration="3559000" />
+    </task>
+    <task id="LOCAL-00226" summary="修改文章详情点赞图标不显示">
+      <created>1534574620306</created>
+      <option name="number" value="00226" />
+      <option name="presentableId" value="LOCAL-00226" />
+      <option name="project" value="LOCAL" />
+      <updated>1534574620306</updated>
+    </task>
+    <task id="LOCAL-00227" summary="修改文章详情点赞图标不显示">
+      <created>1534574798074</created>
+      <option name="number" value="00227" />
+      <option name="presentableId" value="LOCAL-00227" />
+      <option name="project" value="LOCAL" />
+      <updated>1534574798074</updated>
+    </task>
+    <task id="LOCAL-00228" summary="修改文章详情点赞图标不显示">
+      <created>1534575853340</created>
+      <option name="number" value="00228" />
+      <option name="presentableId" value="LOCAL-00228" />
+      <option name="project" value="LOCAL" />
+      <updated>1534575853340</updated>
+    </task>
+    <task id="LOCAL-00229" summary="修改文章详情点赞图标不显示">
+      <created>1534576147342</created>
+      <option name="number" value="00229" />
+      <option name="presentableId" value="LOCAL-00229" />
+      <option name="project" value="LOCAL" />
+      <updated>1534576147342</updated>
+    </task>
+    <task id="LOCAL-00230" summary="修改文章详情点赞图标不显示">
+      <created>1534576456230</created>
+      <option name="number" value="00230" />
+      <option name="presentableId" value="LOCAL-00230" />
+      <option name="project" value="LOCAL" />
+      <updated>1534576456230</updated>
+    </task>
+    <task id="LOCAL-00231" summary="修改文章详情点赞图标不显示">
+      <created>1534576973200</created>
+      <option name="number" value="00231" />
+      <option name="presentableId" value="LOCAL-00231" />
+      <option name="project" value="LOCAL" />
+      <updated>1534576973200</updated>
+    </task>
+    <task id="LOCAL-00232" summary="修改文章详情点赞图标不显示">
+      <created>1534577067664</created>
+      <option name="number" value="00232" />
+      <option name="presentableId" value="LOCAL-00232" />
+      <option name="project" value="LOCAL" />
+      <updated>1534577067664</updated>
+    </task>
+    <task id="LOCAL-00233" summary="修改文章详情点赞图标不显示">
+      <created>1534577742150</created>
+      <option name="number" value="00233" />
+      <option name="presentableId" value="LOCAL-00233" />
+      <option name="project" value="LOCAL" />
+      <updated>1534577742150</updated>
+    </task>
+    <task id="LOCAL-00234" summary="修改文章详情点赞图标不显示">
+      <created>1534578423595</created>
+      <option name="number" value="00234" />
+      <option name="presentableId" value="LOCAL-00234" />
+      <option name="project" value="LOCAL" />
+      <updated>1534578423596</updated>
+    </task>
+    <task id="LOCAL-00235" summary="修改文章详情点赞图标不显示">
+      <created>1534580150761</created>
+      <option name="number" value="00235" />
+      <option name="presentableId" value="LOCAL-00235" />
+      <option name="project" value="LOCAL" />
+      <updated>1534580150762</updated>
+    </task>
+    <task id="LOCAL-00236" summary="修改文章详情点赞图标不显示">
+      <created>1534580668307</created>
+      <option name="number" value="00236" />
+      <option name="presentableId" value="LOCAL-00236" />
+      <option name="project" value="LOCAL" />
+      <updated>1534580668307</updated>
+    </task>
+    <task id="LOCAL-00237" summary="修改文章详情点赞图标不显示">
+      <created>1534581283431</created>
+      <option name="number" value="00237" />
+      <option name="presentableId" value="LOCAL-00237" />
+      <option name="project" value="LOCAL" />
+      <updated>1534581283431</updated>
+    </task>
+    <task id="LOCAL-00238" summary="修改文章详情点赞图标不显示">
+      <created>1534581387741</created>
+      <option name="number" value="00238" />
+      <option name="presentableId" value="LOCAL-00238" />
+      <option name="project" value="LOCAL" />
+      <updated>1534581387741</updated>
+    </task>
+    <task id="LOCAL-00239" summary="修改文章详情点赞图标不显示">
+      <created>1534581553498</created>
+      <option name="number" value="00239" />
+      <option name="presentableId" value="LOCAL-00239" />
+      <option name="project" value="LOCAL" />
+      <updated>1534581553499</updated>
+    </task>
+    <task id="LOCAL-00240" summary="修改文章详情点赞图标不显示">
+      <created>1534581841570</created>
+      <option name="number" value="00240" />
+      <option name="presentableId" value="LOCAL-00240" />
+      <option name="project" value="LOCAL" />
+      <updated>1534581841571</updated>
+    </task>
+    <task id="LOCAL-00241" summary="修改文章详情点赞图标不显示">
+      <created>1534582013217</created>
+      <option name="number" value="00241" />
+      <option name="presentableId" value="LOCAL-00241" />
+      <option name="project" value="LOCAL" />
+      <updated>1534582013217</updated>
+    </task>
+    <task id="LOCAL-00242" summary="修改文章详情点赞图标不显示">
+      <created>1534582196015</created>
+      <option name="number" value="00242" />
+      <option name="presentableId" value="LOCAL-00242" />
+      <option name="project" value="LOCAL" />
+      <updated>1534582196015</updated>
+    </task>
+    <task id="LOCAL-00243" summary="修改文章详情点赞图标不显示">
+      <created>1534582341815</created>
+      <option name="number" value="00243" />
+      <option name="presentableId" value="LOCAL-00243" />
+      <option name="project" value="LOCAL" />
+      <updated>1534582341815</updated>
+    </task>
+    <task id="LOCAL-00244" summary="修改文章详情点赞图标不显示">
+      <created>1534582624250</created>
+      <option name="number" value="00244" />
+      <option name="presentableId" value="LOCAL-00244" />
+      <option name="project" value="LOCAL" />
+      <updated>1534582624251</updated>
+    </task>
+    <task id="LOCAL-00245" summary="add cardGrade filter">
+      <created>1534607596996</created>
+      <option name="number" value="00245" />
+      <option name="presentableId" value="LOCAL-00245" />
+      <option name="project" value="LOCAL" />
+      <updated>1534607596997</updated>
+    </task>
+    <task id="LOCAL-00246" summary="add cardGrade filter">
+      <created>1534608089321</created>
+      <option name="number" value="00246" />
+      <option name="presentableId" value="LOCAL-00246" />
+      <option name="project" value="LOCAL" />
+      <updated>1534608089321</updated>
+    </task>
+    <task id="LOCAL-00247" summary="add cardGrade filter">
+      <created>1534608277488</created>
+      <option name="number" value="00247" />
+      <option name="presentableId" value="LOCAL-00247" />
+      <option name="project" value="LOCAL" />
+      <updated>1534608277488</updated>
+    </task>
+    <task id="LOCAL-00248" summary="add cardGrade filter">
+      <created>1534608448734</created>
+      <option name="number" value="00248" />
+      <option name="presentableId" value="LOCAL-00248" />
+      <option name="project" value="LOCAL" />
+      <updated>1534608448734</updated>
+    </task>
+    <task id="LOCAL-00249" summary="add cardGrade filter">
+      <created>1534608643076</created>
+      <option name="number" value="00249" />
+      <option name="presentableId" value="LOCAL-00249" />
+      <option name="project" value="LOCAL" />
+      <updated>1534608643076</updated>
+    </task>
+    <task id="LOCAL-00250" summary="add cardGrade filter">
+      <created>1534608883188</created>
+      <option name="number" value="00250" />
+      <option name="presentableId" value="LOCAL-00250" />
+      <option name="project" value="LOCAL" />
+      <updated>1534608883188</updated>
+    </task>
+    <task id="LOCAL-00251" summary="add cardGrade filter">
+      <created>1534609045724</created>
+      <option name="number" value="00251" />
+      <option name="presentableId" value="LOCAL-00251" />
+      <option name="project" value="LOCAL" />
+      <updated>1534609045724</updated>
+    </task>
+    <task id="LOCAL-00252" summary="add cardGrade filter">
+      <created>1534609113163</created>
+      <option name="number" value="00252" />
+      <option name="presentableId" value="LOCAL-00252" />
+      <option name="project" value="LOCAL" />
+      <updated>1534609113163</updated>
+    </task>
+    <task id="LOCAL-00253" summary="add cardGrade filter">
+      <created>1534609313522</created>
+      <option name="number" value="00253" />
+      <option name="presentableId" value="LOCAL-00253" />
+      <option name="project" value="LOCAL" />
+      <updated>1534609313522</updated>
+    </task>
+    <task id="LOCAL-00254" summary="add cardGrade filter">
+      <created>1534611281415</created>
+      <option name="number" value="00254" />
+      <option name="presentableId" value="LOCAL-00254" />
+      <option name="project" value="LOCAL" />
+      <updated>1534611281415</updated>
+    </task>
+    <task id="LOCAL-00255" summary="add cardGrade filter">
+      <created>1534611407300</created>
+      <option name="number" value="00255" />
+      <option name="presentableId" value="LOCAL-00255" />
+      <option name="project" value="LOCAL" />
+      <updated>1534611407300</updated>
+    </task>
+    <task id="LOCAL-00256" summary="add cardGrade filter">
+      <created>1534611569765</created>
+      <option name="number" value="00256" />
+      <option name="presentableId" value="LOCAL-00256" />
+      <option name="project" value="LOCAL" />
+      <updated>1534611569765</updated>
+    </task>
+    <task id="LOCAL-00257" summary="add cardGrade filter">
+      <created>1534611677723</created>
+      <option name="number" value="00257" />
+      <option name="presentableId" value="LOCAL-00257" />
+      <option name="project" value="LOCAL" />
+      <updated>1534611677723</updated>
+    </task>
+    <task id="LOCAL-00258" summary="add cardGrade filter">
+      <created>1534611882359</created>
+      <option name="number" value="00258" />
+      <option name="presentableId" value="LOCAL-00258" />
+      <option name="project" value="LOCAL" />
+      <updated>1534611882359</updated>
+    </task>
+    <task id="LOCAL-00259" summary="add cardGrade filter">
+      <created>1534612461121</created>
+      <option name="number" value="00259" />
+      <option name="presentableId" value="LOCAL-00259" />
+      <option name="project" value="LOCAL" />
+      <updated>1534612461121</updated>
+    </task>
+    <task id="LOCAL-00260" summary="add cardGrade filter">
+      <created>1534612598746</created>
+      <option name="number" value="00260" />
+      <option name="presentableId" value="LOCAL-00260" />
+      <option name="project" value="LOCAL" />
+      <updated>1534612598746</updated>
+    </task>
+    <task id="LOCAL-00261" summary="add cardGrade filter">
+      <created>1534612751731</created>
+      <option name="number" value="00261" />
+      <option name="presentableId" value="LOCAL-00261" />
+      <option name="project" value="LOCAL" />
+      <updated>1534612751731</updated>
+    </task>
+    <task id="LOCAL-00262" summary="add cardGrade filter">
+      <created>1534646516021</created>
+      <option name="number" value="00262" />
+      <option name="presentableId" value="LOCAL-00262" />
+      <option name="project" value="LOCAL" />
+      <updated>1534646516022</updated>
+    </task>
+    <task id="LOCAL-00263" summary="change the size of images">
+      <created>1534668399425</created>
+      <option name="number" value="00263" />
+      <option name="presentableId" value="LOCAL-00263" />
+      <option name="project" value="LOCAL" />
+      <updated>1534668399426</updated>
+    </task>
+    <task id="LOCAL-00264" summary="change the size of images">
+      <created>1534668592153</created>
+      <option name="number" value="00264" />
+      <option name="presentableId" value="LOCAL-00264" />
+      <option name="project" value="LOCAL" />
+      <updated>1534668592153</updated>
+    </task>
+    <task id="LOCAL-00265" summary="change the size of images">
+      <created>1534672943568</created>
+      <option name="number" value="00265" />
+      <option name="presentableId" value="LOCAL-00265" />
+      <option name="project" value="LOCAL" />
+      <updated>1534672943569</updated>
+    </task>
+    <task id="LOCAL-00266" summary="change the size of images">
+      <created>1534675767108</created>
+      <option name="number" value="00266" />
+      <option name="presentableId" value="LOCAL-00266" />
+      <option name="project" value="LOCAL" />
+      <updated>1534675767108</updated>
+    </task>
+    <task id="LOCAL-00267" summary="change the size of images">
+      <created>1534676759769</created>
+      <option name="number" value="00267" />
+      <option name="presentableId" value="LOCAL-00267" />
+      <option name="project" value="LOCAL" />
+      <updated>1534676759769</updated>
+    </task>
+    <task id="LOCAL-00268" summary="change the size of images">
+      <created>1534677926549</created>
+      <option name="number" value="00268" />
+      <option name="presentableId" value="LOCAL-00268" />
+      <option name="project" value="LOCAL" />
+      <updated>1534677926549</updated>
+    </task>
+    <task id="LOCAL-00269" summary="change the size of images">
+      <created>1534678050787</created>
+      <option name="number" value="00269" />
+      <option name="presentableId" value="LOCAL-00269" />
+      <option name="project" value="LOCAL" />
+      <updated>1534678050787</updated>
+    </task>
+    <task id="LOCAL-00270" summary="change the size of images">
+      <created>1534678463973</created>
+      <option name="number" value="00270" />
+      <option name="presentableId" value="LOCAL-00270" />
+      <option name="project" value="LOCAL" />
+      <updated>1534678463973</updated>
+    </task>
+    <task id="LOCAL-00271" summary="add judge of articleAbstract Limitation.">
+      <created>1534745325852</created>
+      <option name="number" value="00271" />
+      <option name="presentableId" value="LOCAL-00271" />
+      <option name="project" value="LOCAL" />
+      <updated>1534745325853</updated>
+    </task>
+    <task id="LOCAL-00272" summary="try set default img with ||">
+      <created>1534747659636</created>
+      <option name="number" value="00272" />
+      <option name="presentableId" value="LOCAL-00272" />
+      <option name="project" value="LOCAL" />
+      <updated>1534747659636</updated>
+    </task>
+    <task id="LOCAL-00273" summary="try set default img with ||">
+      <created>1534747839791</created>
+      <option name="number" value="00273" />
+      <option name="presentableId" value="LOCAL-00273" />
+      <option name="project" value="LOCAL" />
+      <updated>1534747839791</updated>
+    </task>
+    <task id="LOCAL-00274" summary="再次压缩图片">
+      <created>1534754387750</created>
+      <option name="number" value="00274" />
+      <option name="presentableId" value="LOCAL-00274" />
+      <option name="project" value="LOCAL" />
+      <updated>1534754387751</updated>
+    </task>
+    <option name="localTasksCounter" value="275" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="667221000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="55" y="-8" width="1873" height="1096" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49895614" visible="true" weight="0.13787466" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.47029972" side_tool="true" weight="0.32979852" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.5297003" weight="0.32979852" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30793318" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" sideWeight="0.50104386" side_tool="true" weight="0.19836512" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.32985386" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32979852" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.22693531" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="false" />
+    <MESSAGE value="calendar add" />
+    <MESSAGE value="remove get_token in home.js" />
+    <MESSAGE value="remove body overflow-y hidden" />
+    <MESSAGE value="解决了验证码，手机号/邮箱号，一直为空的问题。&#10;要将定义号的请求参数数组，放到ajax请求的触发函数内。yes!" />
+    <MESSAGE value="压缩图片大小" />
+    <MESSAGE value="修正提示获取的逆袭豆个数" />
+    <MESSAGE value="背景图再次压缩" />
+    <MESSAGE value="修改绑定电话/邮箱为空时的显示" />
+    <MESSAGE value="模态框封装" />
+    <MESSAGE value="id恢复" />
+    <MESSAGE value="修改获得验证后的提示" />
+    <MESSAGE value="打印登录res" />
+    <MESSAGE value="chang .$ to ." />
+    <MESSAGE value="delete uploader.js" />
+    <MESSAGE value="修改文章详情点赞图标不显示" />
+    <MESSAGE value="add cardGrade filter" />
+    <MESSAGE value="change the size of images" />
+    <MESSAGE value="add judge of articleAbstract Limitation." />
+    <MESSAGE value="try set default img with ||" />
+    <MESSAGE value="再次压缩图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="再次压缩图片" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="8" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/script/controller/authorize.js" />
+    <entry file="file://$PROJECT_DIR$/style/bindInfo.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/building.scss" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/myKeep.scss-revHEAD.svn000.tmp.scss" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/videoList.js-revHEAD.svn000.tmp.js" />
+    <entry file="file://$PROJECT_DIR$/views/building.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/sign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/commonStyle.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1092">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/myKeep.js-revHEAD.svn000.tmp.js" />
+    <entry file="file://$PROJECT_DIR$/views/bindOver.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="102" column="64" lean-forward="true" selection-start-line="102" selection-start-column="64" selection-end-line="102" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/studentEdit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="58" column="20" selection-start-line="58" selection-start-column="20" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/article.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/factory/commonUnit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="780">
+          <caret line="48" column="7" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/factory/ajaxUrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/factory/projectService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="116" column="29" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/videoList.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3068">
+          <caret line="118" column="34" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/building.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/bindingInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/upload.js" />
+    <entry file="file://$PROJECT_DIR$/script/config/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3666">
+          <caret line="141" column="15" lean-forward="true" selection-start-line="141" selection-start-column="15" selection-end-line="141" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/articleList/Layer3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/articleList/up.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/bindOver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="53" column="24" lean-forward="true" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/articleList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2600">
+          <caret line="100" column="31" selection-start-line="100" selection-start-column="31" selection-end-line="100" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/articleList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/article.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="40" column="20" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/signIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/filter/filter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/studentEdit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/studentEdit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2002">
+          <caret line="77" column="40" selection-start-line="77" selection-start-column="18" selection-end-line="77" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/home.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/home/restroom.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/home/restroom.jpg" />
+    <entry file="file://$PROJECT_DIR$/images/home/article.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/student.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/constant/constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/myKeep.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/myKeep.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="824">
+          <caret line="60" column="38" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/myKeep.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2080">
+          <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
+          <folding>
+            <element signature="e#609#1987#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/myKeep.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/student.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/videoList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="49" column="16" lean-forward="true" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#3;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#4;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#1;n#div#4;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/controller/videoList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" selection-start-line="5" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/home/signIcon.gif">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1230">
+          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>sass</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="sass" />
+          </order>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

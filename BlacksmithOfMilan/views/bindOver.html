@@ -1,0 +1,107 @@
+<div class="bindOver">
+    <div class="swap">
+        <div class="header title1 btn-block text-center">
+            <span ng-click="vm.back()"  class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+            <span>绑定</span>
+        </div>
+    </div>
+    <!--头部-->
+    <div class="bindMethod">
+        <div class="bindBanner">
+            <img ng-class="{active: vm.choice===1}"
+                 ng-click="vm.mobile()"
+                 src="../images/student/telBind.png"
+                 alt="">
+        </div>
+        <div class="stick"></div>
+        <div class="bindBanner">
+            <img ng-class="{active: vm.choice===2}"
+                 ng-click="vm.Email()"
+                 src="../images/student/emailBind.png"
+                 alt="">
+        </div>
+    </div>
+    <!--绑定公告-->
+    <div class="bindNotice text-center">
+        <img src="../images/student/loudSpeaker.png" alt="">
+        <span>绑定手机号/邮箱可获得20颗逆袭豆 </span>
+    </div>
+    <div ng-show="vm.choice===1" class="newBind">
+        <form name="Tel" class="Inputting">
+            <label for="telNew">
+                <span>手机:&nbsp;</span>
+            </label>
+            <input id="telNew"
+                   ng-model="vm.newTel"
+                   maxlength="11"
+                   placeholder="同学，请输入一个能收到验证码的手机号"
+                   type="tel"
+                   onkeyup="value=value.replace(/[^\d]/g,'')"
+                   required>
+        </form>
+        <form name="TCode" class="Inputting">
+            <label for="tCode">
+                <span>验证:&nbsp;</span>
+            </label>
+            <input id="tCode"
+                   ng-model="vm.telCode"
+                   maxlength="6"
+                   onkeyup="value=value.replace(/[^\d]/g,'')"
+                   placeholder="请输入手机验证码"
+                   type="text"
+                   required>
+            <button ng-click="vm.toGetTelCode()"
+                    ng-disabled="Tel.$invalid||vm.clickTel"
+                    class="btn btn-lg pull-right">
+                {{vm.TelDescription}}
+            </button>
+        </form>
+        <div  class="commitBtn text-center">
+            <button ng-click="vm.saveModify()"
+                    style="padding: 0"
+                    class="btn"
+                    ng-disabled="Tel.$invalid||TCode.$invalid">
+                <img src="../images/student/binding.png" alt="">
+            </button>
+        </div>
+    </div>
+    <div ng-show="vm.choice===2" class="newBind">
+        <form name="email" class="Inputting">
+            <label for="emailNew">
+                <span>邮箱:&nbsp;</span>
+            </label>
+            <!--/^[0-9|A-z|_]{1,17}[@][0-9|A-z]{1,3}.(com)$/-->
+            <input id="emailNew"
+                   name="email"
+                   ng-model="vm.newEmail"
+                   placeholder="同学，请输入一个能收到验证码的邮箱"
+                   type="email"
+                   required>
+        </form>
+        <form name="eCode" class="Inputting">
+            <label for="eCode">
+                <span>验证:&nbsp;</span>
+            </label>
+            <input id="eCode"
+                   ng-model="vm.emailCode"
+                   maxlength="6"
+                   onkeyup="value=value.replace(/[^\d]/g,'')"
+                   placeholder="请输入邮箱验证码"
+                   required
+                   type="text">
+            <button ng-click="vm.toGetEmailCode()"
+                    ng-disabled="email.$invalid||vm.clickEmail"
+                    class="btn btn-lg pull-right">
+                {{vm.EmailDescription}}
+            </button>
+        </form>
+        <div class="commitBtn text-center">
+            <button ng-click="vm.saveModify1()"
+                    style="padding: 0"
+                    class="btn"
+                    ng-disabled="email.$invalid||eCode.$invalid">
+                <img src="../images/student/binding.png" alt="">
+            </button>
+        </div>
+    </div>
+</div>

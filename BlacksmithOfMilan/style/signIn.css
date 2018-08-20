@@ -1,0 +1,44 @@
+*{margin:0;padding:0}
+li{list-style:none}
+img{vertical-align:top}
+.clear{clear:both}
+.sign-wrap{background: peachpuff;min-height:100vh}
+.sign-tran{-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;-o-transition:all .3s ease-out;transition:all .3s ease-out}
+.sign-radius{-webkit-border-radius:5px;-moz-border-radius:5px}
+.sign-right{float:right;width:30%}
+.current-date{float:left;color:#b25d06;font-size:18px}
+.sign-history{float:right;width:92px;height:36px;border-radius:4px;color: #57b6c2;text-align:center;font-size:1pc;line-height:36px;cursor:pointer}
+.sign-history:hover{background-color:#9c4f01}
+.just-sign{display:inline-block;float:right;padding: 12%;border-radius: 5px;cursor:pointer;background:yellow}
+.just-sign.actived,.just-sign:active{background-position:0 -68px}
+.sign-notic{color:#b25d06;text-align:center;font-size:18px}
+.sign-rule-list{margin-bottom:35px;color:#8d8ebb;font-size:1pc;line-height:26px}
+.sign-rule-list h4{font-weight:bolder;font-size:1pc}
+.sign-list{display: flex;flex-wrap: wrap;justify-content: space-evenly}
+.sign-list li{position:relative;float:left;margin-bottom:1.2%;width:13%;padding:7% 0;border-radius: 3px;line-height:0;text-align:center;font-size:16px;color:gray;background:#f0f0f0}
+.calendar-header{margin-top: 20px}
+.calendar-header li{width:13%;padding:7% 0;border-radius: 0;line-height:0;text-align:center;font-size:16px;color:yellow;background:#676767}
+.sign-list li .sign-icon{position:absolute;top:0;left:0;z-index:2;display:none;width:100%;padding:50% 0;background:url(../images/signIn/sign_icon.png) no-repeat center center;background-size: 80%}
+.sign-list li.sign .sign-icon{display:block}
+.sign-layer{position:fixed;top:0;bottom:0;left:0;z-index:888;display:none;width:100%}
+.sign-layer-bg{width:100%;height:100%;background-color:#000;opacity:.55;filter:alpha(opacity=55)}
+.sign-layer-con{position:absolute;top:50%;left:50%;z-index:999;transform:translate(-50%,-50%);padding-top:30px;border:3px #33b23f solid;border-radius:5px;background-color:#fff}
+.sign-history-layer .sign-layer-con{margin:-257px 0 0 -293px;width:586px;height:484px}
+.close-sign-layer{position:absolute;top:13px;right:13px;width:1pc;height:1pc;background:red}
+.sign-history-inf{margin-top:25px;color:#666;text-align:center;font-size:14px}
+.sign-history-inf li{float:left;width:25%}
+.sign-history-inf li h4{color:#33b23f;font-size:40px;line-height:50px}
+.sign-history-table{overflow:hidden;margin:20px;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}
+.sign-history-table table{width:100%;color:#666;text-align:center;font-size:1pc;border-spacing:0}
+.sign-history-table table th{width:33.3%;background-color:#f2f2f2;text-align:center;line-height:40px}
+.sign-history-table td{width:33.3%;border-bottom:1px #e5e5e5 dashed;line-height:34px}
+.yisign{margin:36px 0 0 40px;color:#666;font-size:14px;line-height:38px}
+.yisign .yisign-icon{float:left;margin:0 25px;width:178px;height:38px;background-position:-217px 0}
+.sign-jiangli{position:relative;margin:45px auto;width:335px;height:170px;background-position:0 -146px}
+.sign-jiangli span{position:absolute;top:58px;left:50px;display:block;width:178px;height:106px;color:#ff7300;text-align:center;font-weight:bolder;font-size:30px;line-height:106px}
+.sign-jiangli span em{padding-left:5px;font-style:normal;font-size:1pc}
+.sign-share{display:block;margin:60px auto 0;width:318px;height:3pc;border-radius:5px;background-color:#4ab854;color:#fff;text-align:center;text-decoration:none;font-size:18px;line-height:3pc}
+.sign-share:hover{background-color:#3e9d46}
+.signInRule{z-index: 999;position:absolute;top:50%;left: 50%;width:80%;padding: 10px;transform:translate(-50%,-50%);background: #fff;}
+.signInRule p{max-width: 25em;white-space: pre-wrap}
+.sign-left-top{display: flex;justify-content: space-between;align-items: center;padding:20px}

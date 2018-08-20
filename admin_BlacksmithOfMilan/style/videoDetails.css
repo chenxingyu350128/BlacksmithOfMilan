@@ -1,0 +1,71 @@
+@charset "UTF-8";
+.addContent .titleone {
+  margin: 40px 0;
+}
+.addContent .titleone select {
+  margin-right: 20px;
+  width: 10%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addContent .titletwo {
+  margin: 40px 0 10px 0;
+}
+.addContent .titletwo input {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addContent .selectone {
+  margin: 10px 0;
+}
+.addContent .selectone select {
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addContent .videoAbstract {
+  margin: 10px 0;
+}
+.addContent .videoAbstract textarea {
+  margin-left: 42px;
+  vertical-align: text-top;
+  width: 90%;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addContent .urltext {
+  margin: 10px 0;
+}
+.addContent .urltext input {
+  margin-left: 5px;
+  width: 90%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addContent .textare2 {
+  margin-left: 42px;
+  vertical-align: text-top;
+  width: 90%;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.addContent .edito {
+  border: 1px solid #ccc;
+  margin-left: 40px;
+}
+.addContent .edito .toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+}
+.addContent .edito .text {
+  height: 299px;
+}

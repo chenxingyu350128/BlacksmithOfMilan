@@ -1,0 +1,38 @@
+<div class="all">
+    <div style="height:20px ;"></div>
+    <div class="addArticle">
+        <form  name="myForm" ng-submit="PostForm()"  >
+            <div class="title">模块管理</div>
+            <div class="addContent">
+                <div class="passtitle" style="text-align: right">名称: <input ng-model="title" maxlength="10" type="text" placeholder="请输入名称" name="title"  required></div>
+                <div style="height: 20px;text-indent: 108px;">
+                    <span style="color:red" ng-show="myForm.title.$dirty && myForm.title.$invalid">
+                        <span ng-show="myForm.title.$error.required">内容不能为空</span>
+                    </span>
+                </div>
+          
+                <div class="passtitle" style="text-align: right">URL地址: <input ng-model="URL" maxlength="20" type="text" placeholder="请输入模块对于url地址" name="url"  required></div>
+                <div style="height: 20px;text-indent: 108px;">
+                        <span style="color:red" ng-show="myForm.url.$dirty && myForm.url.$invalid">
+                            <span ng-show="myForm.url.$error.required">内容不能为空</span>
+                        </span>
+                    </div>
+                <div class="passtitle" style="text-align: right">父模块ID: <input ng-model="fatherid" type="text" placeholder="请输入父级模块id"  name="FdId" ng-pattern=/^[0-9]{0,2}$/   required></div>
+                <div style="height: 20px;text-indent: 108px;">
+                        <span style="color:red" ng-show="myForm.FdId.$dirty && myForm.FdId.$invalid">
+                            <span ng-show="myForm.FdId.$error.required">内容不能为空</span>
+                            <span ng-show="myForm.FdId.$error.pattern">请输入数字</span>
+
+                        </span>
+                    </div>
+  
+                </select
+                ></div>
+            </div>
+            <div class="keep">
+                <button ng-disabled="myForm.$invalid" ng-model="keep" ng-click="onkeep()" class="btn btn-success">保存</button>
+                <button ng-model="cancel" ng-click="oncancel()"  class="btn btn-success">取消</button>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="studentDetails">
+        <div style="height:20px ;"></div>
+    <h3>用户详情</h3>
+    <div class="pull-left">
+        <p>
+            <span class="title">昵称:&emsp;</span>
+            <span class="addStyle">{{userDetail.nickName}}</span>
+        </p>
+        <p>
+            <span class="title">ID:&emsp;</span>
+            <span class="addStyle">{{userDetail.id}}</span>
+        </p>
+        <p>
+            <span class="title">手机号:</span>
+            <span class="addStyle">{{userDetail.tel||"未设置"}}</span>
+        </p>
+        <p>
+            <span class="title">邮箱:</span>
+            <span class="addStyle">{{userDetail.email||"未设置"}}</span>
+        </p>
+        <p>
+            <span class="title">年级:&emsp;</span>
+            <span class="addStyle">{{userDetail.grade|gradeCode}}</span>
+        </p>
+        <p>
+            <span class="title">所在区域:&emsp;</span>
+            <span class="addStyle">{{userDetail.address||"未设置"}}</span>
+        </p>
+        <p>
+            <span class="title">逆袭豆:&emsp;</span>
+            <span class="addStyle">{{userDetail.score}}</span>
+        </p>
+    </div>
+    <div class="pull-left avatar">
+        <span class="title">用户头像:</span>
+        <img class="pull-right" ng-src="{{userDetail.avatar}}" alt="图片加载失败">
+    </div>
+    <div class="backBtn">
+        <button class="btn btn-lg btn-danger" ui-sref="pageTab.userManage">返回</button>
+    </div>
+</div>

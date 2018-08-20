@@ -1,0 +1,94 @@
+<div class="myKeep">
+    <div class="swap">
+        <div class="header title1 btn-block text-center">
+            <span ng-click="vm.backToCard()"  class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+            <span>我的收藏</span>
+        </div>
+    </div>
+    <!--头部-->
+    <div class="bindMethod">
+        <div class="bindBanner">
+            <img ng-class="{active: vm.choice===1}"
+                 ng-click="vm.favoriteVideo()"
+                 src="../images/student/classroom.png"
+                 alt="">
+        </div>
+        <div class="stick"></div>
+        <div class="bindBanner">
+            <img ng-class="{active: vm.choice===2}"
+                 ng-click="vm.favoriteArticle()"
+                 src="../images/student/readingRoom.png"
+                 alt="">
+        </div>
+    </div>
+    <div ng-show="vm.choice===1" class="banner ListOfVideo">
+        <div class="unitOfVideo" ng-repeat="x in vm.VList">
+            <div class="boxTop">
+                <div class="topLeft">
+                    <img ng-src="{{x.avatar}}" alt="">
+                </div>
+                <div class="topRight">
+                    <p>{{x.nickName}}</p>
+                    <span>{{vm.numberLimited(x.abstractVideo)}}</span>
+                </div>
+            </div>
+            <div class="main text-center">
+                <p></p>
+                <img src="../images/student/videoIcon.png"
+                     alt=""
+                     class="videoIcon pull-right">
+                <h2>{{x.title}}</h2>
+                <button ng-click="vm.jumpToVideo(x.id,x.status)">立即观看</button>
+                <img ng-src="{{x.cover}}" class="bg" alt="">
+            </div>
+            <div class="footer">
+                <img class="align" ng-src="{{vm.likeSrc(x.liked)}}" alt="">{{x.userLike}}
+                <img ng-src="{{vm.collectSrc(x.collected)}}" alt="">{{x.collection}}
+                <span class="pull-right">
+                    {{x.updateAt|timeFormat}}
+                </span>
+            </div>
+        </div>
+    </div>
+    <div ng-show="vm.choice===2" class="banner ListOfArticle">
+        <div ng-click="vm.jumpToArticle(x.id,x.status)" ng-repeat="x in vm.AList" class="unitOfArticle">
+            <img class="cover" ng-src="{{x.cover}}" alt="">
+            <div class="intro">
+                <p class="A-Title">{{x.title}}</p>
+                <p>{{x.author}}</p>
+                <p>{{vm.numberLimited(x.abstractArticle)}}</p>
+                <div class="footer">
+                    <img class="align" ng-src="{{vm.likeSrc(x.liked)}}" alt="">{{x.userLike}}
+                    <img ng-src="{{vm.collectSrc(x.collected)}}" alt="">{{x.collection}}
+                    <span class="pull-right">{{x.updateAt|timeFormat}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

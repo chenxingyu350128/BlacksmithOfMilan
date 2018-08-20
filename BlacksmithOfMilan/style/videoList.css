@@ -1,0 +1,222 @@
+.videolist {
+  background-color: #fbf3d0;
+}
+.videolist .head {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: #ffffff;
+  font-size: 22px;
+}
+.videolist .head span {
+  line-height: 40x;
+  cursor: pointer;
+}
+.videolist .head span img {
+  max-width: 20px;
+  max-height: 20px;
+  margin-bottom: 4px;
+}
+.videolist .head .igleft {
+  margin-right: 5px;
+}
+.videolist .head .headcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.videolist .head .imright {
+  margin-right: 15px;
+}
+.videolist .type {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  background-color: #ffe57e;
+  color: #e3a51c;
+  font-weight: bold;
+}
+.videolist .type .grade {
+  width: 50%;
+  padding: 15px 0;
+}
+.videolist .type .grade .grade1 {
+  box-sizing: border-box;
+  border-right: 1px solid #5f2500;
+}
+.videolist .type .subject {
+  width: 50%;
+  padding: 15px 0;
+}
+.videolist .type .subject .subject1 {
+  box-sizing: border-box;
+  border-left: 1px solid #5f2500;
+}
+.videolist .grade2 {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-wrap: wrap;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fcd32d;
+}
+.videolist .grade2 .gradeone {
+  text-align: center;
+  width: 30%;
+  padding: 10px 0;
+  background-color: #ffe57e;
+  margin: 10px  0 ;
+  border-radius: 5px;
+  color: #703d0e;
+  font-weight: bold;
+  cursor: pointer;
+}
+.videolist .grade2 .gradeone:hover {
+  background-color: #dd9f1a;
+  color: #ffffff;
+}
+.videolist .grade2 .gradetwo {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 30%;
+  padding: 10px 0;
+  background-color: #ffe57e;
+  margin: 10px  0 ;
+  border-radius: 5px;
+  color: #ffffff;
+  font-weight: bold;
+}
+.videolist .subject2 {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-flex-wrap: wrap;
+  /* Safari 6.1+ */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #fcd32d;
+}
+.videolist .subject2 .gradeone {
+  text-align: center;
+  width: 30%;
+  padding: 10px 0;
+  background-color: #ffe57e;
+  margin: 10px  0 ;
+  border-radius: 5px;
+  color: #703d0e;
+  font-weight: bold;
+  cursor: pointer;
+}
+.videolist .subject2 .gradeone:hover {
+  background-color: #dd9f1a;
+  color: #ffffff;
+}
+.videolist .listone {
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+.videolist .listone .list {
+  cursor: pointer;
+  padding: 10px 0 ;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.videolist .listone .list .imgleft {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.videolist .listone .list .imgleft img {
+  max-width: 50px;
+}
+.videolist .listone .list .content {
+  flex: 1;
+}
+.videolist .listone .list .content .author {
+  padding: 5px 0 0 10px ;
+  font-weight: bold;
+}
+.videolist .listone .list .content .text {
+  padding-left: 10px;
+  font: 12px;
+  color: #bababa;
+}
+.videolist .listone .seo {
+  padding: 30px 15px;
+  position: relative;
+}
+.videolist .listone .seo span {
+  position: absolute;
+  display: inline-block;
+  padding: 8px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 0, 0);
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  color: #fff;
+}
+.videolist .listone .contentbottom {
+  color: #bababa;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.videolist .listone .contentbottom .up {
+  margin-right: 5%;
+  cursor: pointer;
+  display: inline-block;
+}
+.videolist .listone .contentbottom .up img {
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+.videolist .listone .contentbottom .up span {
+  padding: 5px;
+}
+.videolist .listone .contentbottom .break {
+  flex-basis: 15%;
+  padding-top: 3px;
+}
+.videolist .listone .contentbottom .break img {
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+.videolist .listone .contentbottom .break span {
+  padding: 5px;
+}
+.videolist .listone .contentbottom .time {
+  float: right;
+  padding-bottom: 5px;
+  text-align: right;
+  margin-right: 10px;
+}
+.videolist .listone .contentbottom .time img {
+  margin-bottom: 3px;
+}
+.videolist .listone .contentbottom .time span {
+  margin-right: 10px;
+}
+.loadbutton button {
+  width: 92%;
+  margin-top: 30px;
+  margin-left: 4%;
+  background: #ee7600;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  border: 2px solid #5f2500;
+}

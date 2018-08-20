@@ -1,0 +1,239 @@
+li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+.clear {
+  clear: both; }
+
+.sign-wrap {
+  padding-top: .5rem;
+  background: url("../images/student/calendarBG.png") no-repeat;
+  background-size: 100% 100%;
+  min-height: calc(100vh - .5rem); }
+
+.sign-tran {
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out; }
+
+.sign-radius {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+.sign-right {
+  float: right;
+  width: 30%; }
+
+.sign-left {
+  padding: .1rem .1rem .4rem;
+  border-radius: 5px;
+  background: #fcd32d;
+  transform: scale(0.85); }
+
+.current-date {
+  float: left;
+  color: #b25d06;
+  font-size: 18px; }
+
+.sign-history {
+  float: right;
+  width: 92px;
+  height: 36px;
+  border-radius: 4px;
+  color: #fe3c4f;
+  text-align: center;
+  font-size: 1pc;
+  line-height: 36px;
+  cursor: pointer; }
+  .sign-history:hover {
+    background-color: #9c4f01; }
+
+.just-sign {
+  display: inline-block;
+  float: right;
+  padding: 12%;
+  border-radius: 5px;
+  cursor: pointer;
+  background: yellow; }
+  .just-sign.active, .just-sign:active {
+    background-position: 0 -68px; }
+
+.sign-notic {
+  color: #b25d06;
+  text-align: center;
+  font-size: 18px; }
+
+.sign-rule-list {
+  color: #fff;
+  font-size: 1pc;
+  line-height: 26px; }
+  .sign-rule-list h4 {
+    font-weight: bolder;
+    font-size: 1pc; }
+
+#js-sign-list {
+  padding: .1rem;
+  border-radius: 5px;
+  background: #fcba1a; }
+
+.sign-main {
+  border-radius: 5px;
+  background: #ff0; }
+  .sign-main .sign-list .able-sign {
+    background: #DDA0DD; }
+
+.sign-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+  .sign-list li {
+    position: relative;
+    float: left;
+    margin-bottom: 1.2%;
+    width: 13%;
+    padding: 7% 0;
+    border-radius: 5px;
+    line-height: 0;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #afccf8;
+    background: #fffbea; }
+
+.calendar-header {
+  margin-top: 20px;
+  background: #fcea6b; }
+  .calendar-header li {
+    width: 13%;
+    padding: 7% 0;
+    border-radius: 0;
+    line-height: 0;
+    text-align: center;
+    font-size: 16px;
+    color: #5f2600;
+    background: padding-box; }
+  .calendar-header .weekend {
+    color: #4a7cca; }
+
+.sign-list .sign {
+  color: #fff;
+  background: url(../images/signIn/beanIconBG.png) no-repeat center center;
+  background-size: 110%; }
+
+.sign-list li .sign-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  padding: 50% 0;
+  color: #fff; }
+.sign-list li.sign .sign-icon {
+  display: block; }
+
+.sign-layer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 888;
+  display: none;
+  width: 100%; }
+
+.sign-layer-bg {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: .55;
+  filter: alpha(opacity=55); }
+
+.sign-layer-con {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85vw;
+  padding: .1rem;
+  transform: translate(-50%, -50%); }
+  .sign-layer-con .mainImg img {
+    width: 85vw; }
+  .sign-layer-con .addBean {
+    position: relative;
+    left: 22vw;
+    bottom: 21.7vw;
+    font-size: 25px;
+    color: #fff; }
+    .sign-layer-con .addBean .beanColor {
+      color: #fcde00; }
+
+.sign-layer-con1 {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 85vw;
+  padding: .1rem;
+  border: 3px solid peachpuff;
+  transform: translate(-50%, -50%);
+  background: palevioletred; }
+
+.sign-active .close-sign-layer {
+  position: relative;
+  top: 17.6vw;
+  right: -6vw;
+  width: 16vw; }
+
+.sign-bottom .close-sign-layer {
+  position: relative;
+  top: -4.4vw;
+  right: -4vw;
+  width: 14vw; }
+
+.sign-history-inf {
+  margin-top: 25px;
+  color: #666;
+  text-align: center;
+  font-size: 14px; }
+  .sign-history-inf li {
+    float: left;
+    width: 25%; }
+    .sign-history-inf li h4 {
+      color: #33b23f;
+      font-size: 40px;
+      line-height: 50px; }
+
+.sign-history-table {
+  overflow: hidden;
+  margin: 20px;
+  -webkit-border-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0; }
+  .sign-history-table table {
+    width: 100%;
+    color: #666;
+    text-align: center;
+    font-size: 1pc;
+    border-spacing: 0; }
+    .sign-history-table table th {
+      width: 33.3%;
+      background-color: #f2f2f2;
+      text-align: center;
+      line-height: 40px; }
+  .sign-history-table td {
+    width: 33.3%;
+    border-bottom: 1px #e5e5e5 dashed;
+    line-height: 34px; }
+
+.ruleBox {
+  position: fixed; }
+
+.sign-left-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/*# sourceMappingURL=sign.css.map */

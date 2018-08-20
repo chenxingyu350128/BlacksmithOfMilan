@@ -1,0 +1,122 @@
+<div class="all">
+    <form  name="myForm" ng-submit="PostForm()" >
+        <div style="height:20px ;"></div>
+        <div class="addArticle">
+            <div class="title">新增(编辑、查看）文章</div>
+            <div class="addContent"> 
+                <div  class="titletext">标题：<input name="Usertitle" maxlength="20" type="text" ng-change="text()" ng-model="titletext" ng-disabled="one" required >
+                    <div style="height: 20px;text-indent: 45px">
+                            <span style="color:red" ng-show="myForm.Usertitle.$dirty && myForm.Usertitle.$invalid">
+                                <span ng-show="myForm.Usertitle.$error.pattern">请输入8到18位的用户名</span>
+                                <span ng-show="myForm.Usertitle.$error.required">标题不能为空</span>
+                            </span>
+                        </div>
+                </div>
+                <div class="classify">
+                    分类 : <select ng-model="typeselect" ng-options="x.numb as x.site for x in typesites" ng-disabled="two" name="UserSelect"  required>
+                    </select>
+                    <div style="height: 20px;text-indent: 45px">
+                            <span style="color:red" ng-show="myForm.UserSelect.$dirty && myForm.UserSelect.$invalid">
+                                    <span ng-show="myForm.UserSelect.$error.required">内容不能为空</span>
+                                </span>
+                        </div>
+                </div>
+                <div class="show" style="margin-bottom: 40px">
+                    <div class="containe">          
+                        <label class="btn btn-success" ng-disabled="three" for="load">上传文件</label>
+                        <input type="file" style="opacity: 0"  nv-file-select=""  id="load" uploader="uploader" required /> 
+                        <br/>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="50%">文件名</th>
+                                <th ng-show="uploader.isHTML5">文件大小</th>
+                                <th ng-show="uploader.isHTML5">进程</th>
+                                <th>状态</th>
+                                <th>动作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in uploader.queue">
+                                <td>
+                                    <strong>{{ item.file.name }}</strong>
+                                  
+                                </td>
+                                <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                                <td ng-show="uploader.isHTML5">
+                                    <div class="progress" style="margin-bottom: 0;">
+                                        <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span ng-show="item.isSuccess">
+                                        <i class="glyphicon glyphicon-ok"></i>
+                                    </span>
+                                    <span ng-show="item.isCancel">
+                                        <i class="glyphicon glyphicon-ban-circle"></i>
+                                    </span>
+                                    <span ng-show="item.isError">
+                                        <i class="glyphicon glyphicon-remove"></i>
+                                    </span>
+                                </td>
+                                <td nowrap>
+                                    <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                                        <span class="glyphicon glyphicon-upload"></span> Upload
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                                        <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                                        <span class="glyphicon glyphicon-trash"></span> Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <img style="max-width: 200px;" alt="配图预览" id="img-preview" ng-src="{{iconUrl}}" >
+                        </tbody>
+                    </table>
+                    <div>
+                        <div>
+                            Queue progress:
+                            <div class="progress" >
+                                <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="author">作者：<input maxlength="20" ng-model="authortext" type="text" ng-disabled="four" name="UserAuthor"  required >
+                    <div style="height: 20px;text-indent: 45px">
+                            <span style="color:red" ng-show="myForm.UserAuthor.$dirty && myForm.UserAuthor.$invalid">
+                                    <span ng-show="myForm.UserAuthor.$error.pattern">请输入8到18位的用户名</span>
+                                    <span ng-show="myForm.UserAuthor.$error.required">内容不能为空</span>
+                                </span>
+                        </div>
+                </div>
+                <div class="abstract">摘要：<textarea maxlength="150" ng-model="abstracttext"  type="text" ng-disabled="five" name="UserAbstract"  required ></textarea>
+                    <div style="height: 20px;text-indent: 45px">               
+                            <span style="color:red" ng-show="myForm.UserAbstract.$dirty && myForm.UserAbstract.$invalid">
+                                    <span ng-show="myForm.UserAbstract.$error.pattern">请输入8到18位的用户名</span>
+                                    <span ng-show="myForm.UserAbstract.$error.required">内容不能为空</span>
+                                </span>
+                        </div>
+                </div>
+                <div class="lighter">
+                    正文： 
+                    <!-- <div class="conta">
+                        <div text-angular class="texta  ueditor" ng-model="htmlContent" ng-show="conta" name="demo-editor" ta-disabled="six" ta-text-editor-class="clearfix border-around container" ta-html-editor-class="border-around" ></div>
+                    </div> -->
+                    <textarea class="textare2" ng-show="textare" ng-model="abstracttext2"  type="text" ng-disabled="five"  ></textarea>
+                    <div ng-show="conta" class="edito">
+                            <div   id="div1" class="toolbar">
+                            </div>
+                            <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+                            </div>
+                            
+                        </div>
+                </div>
+                <div class="keep"><button class="btn btn-success" ng-click="onlick()" ng-show="buttonshow" ng-bind="onebutton">返回</button><button ng-click="cancel()" ng-show="button1" class="btn btn-danger">取消</button><button ng-disabled="myForm.$invalid" ng-show="button2"  ng-model="Keep" ng-click="onkeep()" class="btn btn-success">保存</button> </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>

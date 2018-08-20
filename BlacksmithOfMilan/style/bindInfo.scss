@@ -1,0 +1,114 @@
+//@import "commonStyle";
+.bindDefault {
+  padding-top: 1.2rem;
+  min-height: 100vh;
+  color: #fcbf2b;
+  background: #fbf3d0;
+  font-size: 20px;
+  font-weight: 600;
+  .Row{
+    line-height: .4rem;
+    padding-left: .4rem;
+    margin-bottom: .1rem;
+    .white{
+      display: inline-block;
+      width: 60vw;
+      padding-left: .1rem;
+      border-top: 2px solid #d3aa34;
+      border-radius: 10px;
+      line-height: 0.4rem;
+      font-size: 16px;
+      color: #b8a764;
+      background: #fcd32d;
+    }
+  }
+}
+.modify img {
+  width: 36%;
+  margin-top: .3rem;
+}
+//binding Page
+
+.bindOver{
+  position: absolute;
+  background: #fbf3d0;
+  min-height: 100vh;
+  .bindMethod {
+    display: flex;
+    margin-top: .5rem;
+    padding: .05rem 0;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffe57e;
+    .bindBanner{
+      width: 47%;
+      text-align: center;
+      img{
+        width: 75%;
+        padding: 0.1rem;
+      }
+    }
+    .stick{
+      width: 3px;
+      height: 0.25rem;
+      background: #632a04;
+    }
+    .active{
+      border-bottom: 3px solid #e3a51c;
+    }
+  }
+  .bindNotice{
+    padding: .4rem 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #865834;
+    img{
+      width: 35px;
+    }
+  }
+  .newBind {
+    color: #fcba1a;
+    font-size: 20px;
+    text-align: center;
+    .Inputting{
+      display: inline-block;
+      position: relative;
+      line-height: .4rem;
+      margin: .25rem 0;
+      text-align: center;
+      label{
+        margin-bottom: 0;
+      }
+      input {
+        width: 65vw;
+        border: none;
+        outline: none;
+        border-top: 2px solid #d3aa34;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #b8a764;
+        background: #fcd32d;
+      }
+      .pull-right{
+        position: absolute;
+        right: 0;
+        top: 0;
+        outline: none;
+        //line-height: .28rem;
+        border: 2px solid #5f2500;
+        //padding: 0 .05rem;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        background: #fcd32d;
+      }
+    }
+  }
+  .commitBtn {
+    margin: .3rem 0;
+    img{
+      width: 50vw;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+
+<div class="video">
+    <div class="head">
+        <span ui-sref="videoList"  class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+        <span class="headcenter">教学楼</span>      
+    </div>
+    <div style="height: 60px;"></div>
+
+    
+    <div class="listone">
+        <div class="list">
+            <div class="imgleft"><img style="width: 50px;height: 50px;" src="../images/articleList/portrait.png" alt="头像"></div>
+            <div class="content">
+                <div class="contenttitle"><h4>{{vm.list.title}}</h4></div>
+                <div class="contentbottom">
+                    <span class='time'>{{vm.list.updateAt|date : 'yyyy-MM-dd hh:mm:ss '}}</span>
+                    <span class="author">{{vm.list.nickName}}</span>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+    </div>
+    <p class="telistt" ui-sref="video">{{vm.list.abstractVideo}}</p>
+    <div class="seo">
+        <video width="100%" id="player"  src="{{vm.list.videoUrl}}"  height="240" poster="{{vm.list.bannerUrl}}" controls></video>
+    </div>
+    <p class="telistt" ui-sref="video">{{vm.list.textVideo}}</p>
+    <div class="updown">
+        <div ng-click="vm.redclick()"><img style="width: 29px;height: 30px;" ng-show="vm.redup" src="../images/articleList/redFeelNice.png" alt=""><img style="width: 29px;height: 30px;" ng-show="vm.whiteup" src="../images/articleList/feelNice.png" alt=""></div>
+        <div ng-click="vm.whiteclick()"><img style="width: 29px;height: 30px;" ng-show="vm.redheart" src="../images/articleList/redKeepIt.png" alt=""><img style="width: 29px;height: 30px;" ng-show="vm.whiteheart" src="../images/articleList/keepIt.png" alt=""> </div>
+
+    </div>
+    
+</div>
+

@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.addArticle .addrole {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+.addArticle .addrole .main {
+  margin: 20px 0 20px -10px;
+  font-size: 18px;
+}
+.addArticle .addrole input {
+  margin: 5px 0;
+}

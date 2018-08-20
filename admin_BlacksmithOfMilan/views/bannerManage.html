@@ -1,0 +1,86 @@
+<div class="all">
+    <div style="height:20px ;"></div>
+    <div class="addArticle">
+        <div class="title">新增(编辑、查看）banner图</div>
+        <div>
+            banner类型：<select>
+                <option value="图书馆">图书馆</option>
+                <option value="视频充电">视频充电</option>
+            </select>
+        </div>
+        <div class="addContent"> 
+            <div class="titletext">跳转链接：<input type="url" ng-change="text()" ng-model="cc"></div>
+        </div>
+        <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">可消失的弹出框</a>
+        <div class="container">
+         
+            <!--文件上传指令-->
+            <input type="file"  nv-file-select="" uploader="uploader" />
+
+            <br/>
+        </div>
+        <div class="col-md-9" style="margin-bottom: 40px">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th width="50%">文件名</th>
+                        <th ng-show="uploader.isHTML5">文件大小</th>
+                        <th ng-show="uploader.isHTML5">进程</th>
+                        <th>状态</th>
+                        <th>动作</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in uploader.queue">
+                        <td>
+                            <strong>{{ item.file.name }}</strong>
+                        
+                            <!--图片预览-->
+                            <img style="max-width: 200px;" alt="配图预览" id="img-preview" ng-src="{{iconUrl}}">
+                     
+                        </td>
+                        <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                        <td ng-show="uploader.isHTML5">
+                            <div class="progress" style="margin-bottom: 0;">
+                                <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                            </div>
+                        </td>
+                        <td class="text-center">
+                            <span ng-show="item.isSuccess">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                            <span ng-show="item.isCancel">
+                                <i class="glyphicon glyphicon-ban-circle"></i>
+                            </span>
+                            <span ng-show="item.isError">
+                                <i class="glyphicon glyphicon-remove"></i>
+                            </span>
+                        </td>
+                        <td nowrap>
+                            <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                                <span class="glyphicon glyphicon-upload"></span> Upload
+                            </button>
+                            <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                                <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                            </button>
+                            <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                                <span class="glyphicon glyphicon-trash"></span> Remove
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <div>
+                    Queue progress:
+                    <div class="progress" >
+                        <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><button>取消</button><button>保存</button></div>
+    </div>
+</div>
+</div>
+</div>

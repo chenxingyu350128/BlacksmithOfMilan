@@ -1,0 +1,55 @@
+<div class="header">
+    <div class="left">
+        <span>角色</span>
+        <select ng-model="aid">
+            <option value="">所有</option>
+            <option ng-repeat="x in roleList" value="{{x.rid}}">{{x.roleName}}</option>
+        </select>
+    </div>
+   <div class="right">
+       <button ng-click="search()" class="btn btn-primary">搜索</button>
+   </div>
+</div>
+<div>
+    <div class="main">
+        <div class="add">
+            <span style="font-weight: 600">角色列表</span><button class="btn btn-success" ng-model=" addtext" ng-click="addRole()">新增</button>
+        </div>
+        <table class="table-striped">
+            <tr>
+                <th>id</th>
+                <th>角色</th>
+                <th>创建时间</th>
+                <th>创建人</th>
+                <th>操作</th>
+            </tr>
+            <tr ng-show="showResult" class="searchResult">
+                <td>{{result.rid}}</td>
+                <td>{{result.roleName}}</td>
+                <td>{{result.createAt|date:"yyyy-MM-dd HH:mm"}}</td>
+                <td>{{result.createBy}}</td>
+                <td>
+                    <div class="twoBtn">
+                        <span class="btn btn-primary btn-sm" style="cursor: pointer" ng-click="editRole(result.rid)">编辑</span>
+                        <span class="btn btn-danger btn-sm" style="cursor: pointer" ng-click="deleteRole(result.rid)">删除</span>
+                    </div>
+                </td>
+            </tr>
+            <tr ng-show="showList" class="list" ng-repeat="x in roleList">
+                <td>{{x.rid}}</td>
+                <td>{{x.roleName}}</td>
+                <td>{{x.createAt|date:"yyyy-MM-dd HH:mm"}}</td>
+                <td>{{x.createBy}}</td>
+                <td>
+                    <div class="twoBtn">
+                        <span class="btn btn-primary btn-sm" style="cursor: pointer" ng-click="editRole(x.rid)">编辑</span>
+                        <span class="btn btn-danger btn-sm" style="cursor: pointer" ng-click="deleteRole(x.rid)">删除</span>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div ng-show="showList" class="footer">
+    <page-model1  page="page" total="total" size="size"></page-model1>
+</div>

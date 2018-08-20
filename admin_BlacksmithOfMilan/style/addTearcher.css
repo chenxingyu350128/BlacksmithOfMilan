@@ -1,0 +1,37 @@
+.tc {
+  width: 94%;
+  margin-left: 3%;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.tc .title {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.tc .name {
+  margin-top: 30px;
+  margin-left: 18%;
+}
+.tc .name input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 30px;
+  width: 60%;
+}
+.tc .containe {
+  margin-top: 30px;
+  margin-left: 18%;
+}
+.tc .table {
+  margin-left: 18%;
+  width: 64%;
+}
+.tc .button {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-around;
+}
+/*# sourceMappingURL=addTearcher.css.map */

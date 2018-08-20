@@ -1,0 +1,74 @@
+<div>
+    <div class="search">
+        <div>
+            标&emsp;题：<input ng-model="text1" ng-change="change1text()" type="text">&emsp;
+            分&emsp;类：<select ng-model="classification" ng-options="x.numb as x.site for x in sites">
+            </select>
+            所属年级：<select ng-model="gradeselect">
+                    <option ng-repeat="x in  gradesites" value="{{x.numb}}">{{x.site}}</option>
+            </select>
+        </div>
+        <div> 
+            点赞数：<input ng-model="smallAgree" type="text">——<input ng-model="bigAgree" type="text">&emsp;
+            所属科目：<select ng-model="subjectselect" >
+                    <option ng-repeat="x in  subjectsites" value="{{x.numb}}">{{x.site}}</option>
+            </select>
+        </div>
+        <div class="collect">
+            收藏数：<input ng-model="smallcollection" type="text">——<input ng-model="bigcollection" type="text">
+        </div>
+        <div> 
+            老&emsp;师：<input ng-model="teacher" type="text">&emsp;
+            状态：<select ng-change="test()" ng-model="statusselect" ng-options="x.numb as x.site for x in statussites">
+            </select>
+            <button ng-model="Rest"  ng-click="clickRest()"  class="btn btn-success">重置</button>
+            <button  ng-model="search" ng-click="onsearch()" class="btn btn-warning">搜索</button>
+        </div>
+    </div>
+    
+    <div class="Artcle"> 
+        <div class="add">
+            <span>视频列表（拖动列表，拖动后就算编辑）</span><button ng-model=" addtext" ng-click="addText()">新增视频</button>
+        </div>
+        <table  class="tdone">
+            <td class="th1">序号</td>
+            <td class="th2">标题</td>
+            <td class="th3">分类</td>
+            <td class="th4">所属年级</td>
+            <td class="th5">所属科目</td>
+            <td class="th6">老师</td>
+            <td class="th7">点赞数</td>
+            <td class="th8">收藏数</td>
+            <td class="th9">编辑时间</td>
+            <td class="th10">状态</td>
+            <td class="th11">
+                操作
+            </td>
+        </table>
+        <table ng-repeat="x in liste">
+            <tr class="vidertd">
+                <td class="th1">{{$index+1}}</td>
+                <td class="th2">
+                        {{x.title}}
+                </td>
+                <td class="th3">{{x.type|typeCode }}</td>
+                <td class="th4">{{x.grade | gradeCode}}</td>
+                <td class="th5">{{x.subject  | subjectCode}}</td>
+                <td class="th7">{{x.nickName }}</td>         
+                <td class="th6">{{x.userLike}}</td>
+                <td class="th8">{{x.collection}} </td>
+                <td class="th9">{{x. updateAt | date : 'yyyy-MM-dd hh:mm:ss '}} </td>
+                <td class="th10">{{x.status |statusCode }} </td>
+                <td class="td11">
+                    <button class="button1" ng-click="online(x.id,x.status,x.type)">{{x.status |buttonCode }}</button>
+                    <button class="button2" ng-click="onlineEditor(x.id)">编辑</button>
+                    <button class="button3" ng-click="watch(x.id,x.nickName)">查看</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="page">
+        <ul uib-pagination items-per-page="5" total-items="bigTotalItems" previous-text="上一页" next-text="下一页" ng-model="bigCurrentPage" ng-change="pageChanged()" max-size="maxSize" class="pagination-sm" boundary-link-numbers="true" rotate="false"></ul>
+        <div>去第<input type="text" style="width: 70px;height: 30px;margin: 20px;" ng-change="changepage()"  ng-model="pagenum"><button ng-click="entry()">确定</button></div>    
+    </div>
+</div>

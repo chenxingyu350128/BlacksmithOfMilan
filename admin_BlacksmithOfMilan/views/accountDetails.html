@@ -1,0 +1,40 @@
+<div class="all">
+    <div style="height:20px ;"></div>
+    <div class="addArticle">
+        <div class="title">账户管理</div>
+        <form  name="myForm" ng-submit="PostForm()"  >
+        <div class="addContent">
+            <div class="passtitle">登陆名&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input maxlength="20" ng-model="admin" type="text" placeholder="输入登录名" name="admin"  required></div>
+            <div style="height: 20px;text-indent: 0px;">
+                    <span style="color:red" ng-show="myForm.admin.$dirty && myForm.admin.$invalid">
+                        <span ng-show="myForm.admin.$error.required">内容不能为空</span>
+                    </span>
+                </div>
+         
+            <div class="passtitle">密码:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input ng-model="password" type="password" placeholder="请输入密码"  name="password" ng-pattern=/^[a-zA-Z0-9]{6,25}$/ required></div>
+            <div style="height: 20px;text-indent: 0px;">
+                    <span style="color:red" ng-show="myForm.password.$dirty && myForm.password.$invalid">
+                        <span ng-show="myForm.password.$error.required">内容不能为空</span>
+                        <span ng-show="myForm.password.$error.pattern">请输入6位数以上密码</span>
+                    </span>
+                </div>
+        
+            <div class="passtitle">角色:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <select ng-model="role" name="role"  required> 
+                        <option ng-repeat="x in  rolelist" value="{{x.id}}">{{x.site}}</option>
+
+                    
+            </select></div>
+            <div style="height: 20px;text-indent: 0px;">
+                    <span style="color:red" ng-show="myForm.role.$dirty && myForm.role.$invalid">
+                        <span ng-show="myForm.role.$error.required">内容不能为空</span>
+                    </span>
+                </div>
+        </div>
+        <div class="keep">
+            <button ng-disabled="myForm.$invalid" ng-model="keep" ng-click="onkeep()"  class="btn btn-success">确定</button>
+            <button ng-model="cancel" ng-click="oncancel()"  class="btn btn-success">取消</button>
+        </div>
+    </form>
+    </div>
+</div>

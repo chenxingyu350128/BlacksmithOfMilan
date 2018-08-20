@@ -1,0 +1,147 @@
+<div class="all">
+    <form  name="myForm" ng-submit="PostForm()"  >
+        <div style="height:20px ;"></div>
+        <div class="addArticle">
+            <div ng-show="one" class="title">新增(编辑、查看）视频</div>
+            <div class="addContent"> 
+                <div class="titleone">
+                    所属年级：<select ng-model="gradeselect" ng-disabled="one" ng-options="x.numb as x.site for x in gradesites" name="UserGrade" required>
+                    </select>
+                    
+                    所属科目：<select ng-model="subjectselect" ng-disabled="two" ng-options="x.numb as x.site for x in subjectsites"  name="Usersubject"  required>
+                    </select>
+                    老师昵称：<select ng-model="tcname" ng-change="test()" ng-disabled="nine" ng-options="x.id as x.site for  x in teacher " name="UsernickName"  required >
+                    </select>
+                    <button class="btn btn-success" ng-model="addtearch" ng-click="addTearch()"  ng-disabled="ten">添加</button>
+                    <button class="btn btn-danger" ng-model="deleteTC" ng-click="deleteteacher()"  ng-disabled="eleven">删除</button>
+                    头像：<span><img height="200px;" src="{{teacherImg}}" alt=""></span>
+                </div>
+                <div class="titletwo">标题：<input ng-disabled="three" maxlength="20" ng-model="titleinput" type="text" name="Usertitle"  required >
+                </div>
+                <div style="height: 20px;text-indent: 45px">
+                    <span style="color:red" ng-show="myForm.Usertitle.$dirty && myForm.Usertitle.$invalid">
+                        <span ng-show="myForm.Usertitle.$error.pattern">请输入8到18位的内容</span>
+                        <span ng-show="myForm.Usertitle.$error.required">内容不能为空</span>
+                    </span>
+                </div>
+                <div class="selectone">
+                    分类：<select ng-change="typeone()" ng-model="classification" ng-disabled="four" ng-options="x.numb as x.site for x in sites" name="Usertype"  required>
+                    </select>
+                </div>
+                <div style="height: 20px;text-indent: 45px">
+                    <span style="color:red" ng-show="myForm.Usertype.$dirty && myForm.Usertype.$invalid">         
+                        <span ng-show="myForm.Usertype.$error.required">内容不能为空</span>
+                    </span>
+                </div>
+                <div class="show" ng-show="uploaderShow" style="margin-bottom: 40px">
+                    <div class="containe">
+                        
+                        <!--文件上传指令-->
+                        <label class="btn btn-success"  for="loade" ng-disabled="five">上传文件</label>
+                        <input type="file" style="opacity: 0;"  nv-file-select="" id="loade" uploader="uploader" />
+                        
+                        <br/>
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th width="50%">文件名</th>
+                                <th ng-show="uploader.isHTML5">文件大小</th>
+                                <th ng-show="uploader.isHTML5">进程</th>
+                                <th>状态</th>
+                                <th>动作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="item in uploader.queue">
+                                <td>
+                                    <strong>{{ item.file.name }}</strong>
+                                </td>
+                                <td ng-show="uploader.isHTML5" nowrap>{{ item.file.size/1024/1024|number:2 }} MB</td>
+                                <td ng-show="uploader.isHTML5">
+                                    <div class="progress" style="margin-bottom: 0;">
+                                        <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                                    </div>
+                                </td>
+                                <td class="text-center">
+                                    <span ng-show="item.isSuccess">
+                                        <i class="glyphicon glyphicon-ok"></i>
+                                    </span>
+                                    <span ng-show="item.isCancel">
+                                        <i class="glyphicon glyphicon-ban-circle"></i>
+                                    </span>
+                                    <span ng-show="item.isError">
+                                        <i class="glyphicon glyphicon-remove"></i>
+                                    </span>
+                                </td>
+                                <td nowrap>
+                                    <button type="button" class="btn btn-success btn-xs" ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+                                        <span class="glyphicon glyphicon-upload"></span> Upload
+                                    </button>
+                                    <button type="button" class="btn btn-warning btn-xs" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+                                        <span class="glyphicon glyphicon-ban-circle"></span> Cancel
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-xs" ng-click="item.remove()">
+                                        <span class="glyphicon glyphicon-trash"></span> Remove
+                                    </button>
+                                </td>
+                            </tr>
+                            <img style="max-width: 200px;" alt="配图预览" id="img-preview" ng-src="{{iconUrl}}">
+                        </tbody>
+                    </table>
+                    <div>
+                        <div>
+                            Queue progress:
+                            <div class="progress" >
+                                <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="videoAbstract">视频简介：<textarea ng-model="brief" maxlength="150"  ng-disabled="six" type="text" name="UserAbs"  required ></textarea>
+                </div>
+                <div style="height: 20px;text-indent: 45px">
+                    <span style="color:red" ng-show="myForm.UserAbs.$dirty && myForm.UserAbs.$invalid">
+                        <span ng-show="myForm.UserAbs.$error.pattern">请输入8到18位的内容</span>
+                        <span ng-show="myForm.UserAbs.$error.required">内容不能为空</span>
+                    </span>
+                </div>
+                <!--<video width="80%" height="320" controls loop>-->
+                    <!--<source src="{{videoUrl}}" type="video/mp4">-->
+                        <!--<source src="{{videoUrl}}" type="video/ogg">-->
+                            <!--&lt;!&ndash;您的浏览器不支持 video 标签。 &ndash;&gt;-->
+                            <!--</video>-->
+                            <!--<div><button ng-click=" preview()">预览</button></div>-->
+                            <div class="urltext">URL: <input ng-model="videoUrl" type="url" ng-disabled="seven" name="UserUrl"  required></div>
+                            <div style="height: 20px;text-indent: 45px">
+                                <span style="color:red" ng-show="myForm.UserUrl.$dirty && myForm.UserUrl.$invalid">
+                                    <span ng-show="myForm.UserUrl.$error.url">请输入正确视频格式</span>
+                                    <span ng-show="myForm.UserUrl.$error.required">内容不能为空</span>
+                                </span>
+                            </div>
+                            <div class="lighter" ng-disabled="true">
+                                正文： 
+                                <!-- <div class="conta">
+                                    <div text-angular class="ueditor" contenteditable="false" ng-show="conta" ng-model="htmlContent" name="demo-editor"  ng-disabled="eight"></div>
+                                    <textarea  style="width: 100%;height: 400px" ng-show="textare" ng-model="abstracttext2"  type="text" ng-disabled="five" ></textarea>
+                                    
+                                </div> -->
+                                <textarea  class="textare2"  ng-show="textare" ng-model="abstracttext2"  type="text" ng-disabled="five" ></textarea>
+                                <!-- <div ng-show="conta"  id="div1" contenteditable="false" class="toolbar">
+                                </div> -->
+                                <div ng-show="conta" class="edito">
+                                    <div   id="div1" class="toolbar">
+                                    </div>
+                                    <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                            <div class="keep"><button class="btn btn-success" ng-click="onlick()" ng-show="buttonshow" ng-bind="onebutton">返回</button><button ng-show="button1" ng-click="cancel()" class="btn btn-danger">取消</button><button ng-disabled="myForm.$invalid" ng-show="button2" ng-model="onKeep"  ng-click="onkeep()"  class="btn btn-success">保存</button></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        

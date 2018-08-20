@@ -1,0 +1,28 @@
+<div class="bindInfo">
+    <div class="swap">
+        <div class="header title1 btn-block text-center">
+            <span ng-click="vm.backToCard()"  class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+            <span>绑定信息</span>
+        </div>
+    </div>
+    <div class="swap">
+        <div class="header title2 text-center btn-block">
+            <span ng-click="vm.back()" class="fa fa-angle-left pull-left">&nbsp;&nbsp;返回</span>
+            <span>学生证</span>
+        </div>
+    </div>
+</div>
+<div class="bindDefault">
+    <div class="Row">
+        <span>手机：&nbsp;</span>
+        <span class="white">{{vm.Tel}}</span>
+    </div>
+    <div class="Row">
+        <span>邮箱：&nbsp;</span>
+        <span class="white">{{vm.Email}}</span>
+    </div>
+    <div class="modify text-center">
+        <img ng-click="vm.modify()" src="../images/student/binding.png" alt="">
+    </div>
+
+</div>

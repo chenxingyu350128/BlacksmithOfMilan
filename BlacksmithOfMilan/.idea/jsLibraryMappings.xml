@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{angular, angular-animate, angular-locale_zh-cn, angular-messages, angular-ui-router, bootbox, bootstrap, iscroll, iscroll-zoom, jquery, jweixin-1.2.0, swiper, ui-bootstrap-tpls, weui}" />
+  </component>
+</project>

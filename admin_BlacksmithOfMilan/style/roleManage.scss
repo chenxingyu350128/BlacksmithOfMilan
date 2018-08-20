@@ -1,0 +1,57 @@
+.header{
+  line-height: 5rem;
+  height: 5rem;
+  padding: 40px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .left{
+    line-height: 60px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    select{
+      height: 35px;
+      border-radius: 5px;
+    }
+  }
+}
+.main{
+  margin: 20px;
+  border: 1px solid powderblue;
+  .add{
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  table{
+    width: 100%;
+    th{
+      padding: 20px;
+      text-align: center;
+    }
+    td{
+      padding: 20px;
+      text-align: center;
+    }
+  }
+}
+.pageModel {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding: 20px 40px;
+  font-size: 14px;
+}
+.bottomInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  input {
+    width: 50px;
+    line-height: 28px;
+  }
+}

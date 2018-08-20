@@ -1,0 +1,131 @@
+html {
+  font-size: 625% !important;
+}
+body {
+  //overflow-y: hidden;
+  font-size: 14px;
+  min-height: 100vh;
+}
+@import "commonStyle";
+.homepage{
+  position: relative;
+  .header {
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}
+.swap1 {
+  padding: 0.25rem .2rem;
+}
+.map {
+  display: inline-block;
+  position: relative;
+  width: auto;
+  //height: 100vh;
+  .signIcon {
+    z-index: 88;
+    position: fixed;
+    right: 3%;
+    top: calc(2% + .5rem);
+    width: 75px;
+    height: 65px;
+    background: url("../images/home/signIcon.gif") no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .idCard {
+    z-index: 88;
+    position: fixed;
+    right: 3%;
+    top: calc(15% + .5rem);
+    width: 75px;
+    height: 45px;
+    background: url("../images/home/idCard.gif") no-repeat;
+    -webkit-background-size: contain;
+    background-size: cover;
+  }
+  .mainMap {
+    z-index: -99;
+    height: 100vh;
+    width: auto;
+  }
+}
+.innerMap{
+  img {
+    cursor: pointer;
+  }
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-background-size: contain;
+  background-size: contain;
+  .building {
+    width: 7.5%;
+    z-index: 66;
+    position: absolute;
+    left: 0;
+    top: 41.7%;
+  }
+  .article {
+    z-index: 66;
+    width: 24.4%;
+    position: absolute;
+    left: 10.2%;
+    bottom: 13%;
+  }
+  .restroom {
+    z-index: 66;
+    width: 22.84%;
+    position: absolute;
+    left: 6.2%;
+    top: 4.3%;
+  }
+  .video {
+    z-index: 66;
+    width: 31%;
+    position: absolute;
+    left: 28.6%;
+    top: 0;
+  }
+  .wishTree {
+    z-index: 66;
+    position: absolute;
+    bottom: 27%;
+    left: 46%;
+    width: 22%;
+  }
+  .notice{
+    z-index: 66;
+    position: absolute;
+    left: 45%;
+    bottom: 7.7%;
+    width: 10%;
+  }
+  .stadium {
+    z-index: 66;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    width: 26%;
+  }
+  .shop {
+    z-index: 66;
+    position: absolute;
+    right: 10%;
+    bottom: 14%;
+    width: 19%;
+  }
+}
+.forbid{
+  z-index: 99999;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #000;
+  opacity: .6;
+}

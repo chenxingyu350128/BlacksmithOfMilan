@@ -1,0 +1,36 @@
+.swap1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: .15rem .2rem; }
+
+.header {
+  position: fixed;
+  left: 0;
+  padding: 0 .05rem;
+  line-height: .5rem; }
+  .header .fa {
+    position: absolute;
+    left: 0;
+    vertical-align: middle;
+    line-height: .5rem; }
+
+.fa::before {
+  padding: .05rem;
+  font-size: 25px;
+  vertical-align: bottom; }
+
+.title1 {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background: #000; }
+
+.title2 {
+  position: fixed;
+  top: .5rem;
+  left: 0; }
+
+/*# sourceMappingURL=commonStyle.css.map */

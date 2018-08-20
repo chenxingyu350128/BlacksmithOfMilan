@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> </title>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<script>
+    (function () {
+//        var url =  'https%3a%2f%2facademy.home.bigfish.ptteng.com%2fhome';
+        var url = 'https%3a%2f%2facademy.home.bigfish.ptteng.com%2fhome';
+        var appid = 'wx0b31bcd6cbe880a4';
+        var scope = 'snsapi_userinfo';
+        var wei = 'https://open.weixin.qq.com/connect/oauth2/authorize?' +
+            'appid=' + appid +
+            '&redirect_uri=' + url +
+            '&response_type=code' +
+            '&scope=' + scope +
+            '&state=STATE' +
+            '#wechat_redirect';
+        window.location.href = wei;
+    })();
+
+
+</script>
+</body>
+</html>

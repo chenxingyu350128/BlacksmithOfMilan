@@ -1,0 +1,96 @@
+
+.companySearch {
+  width: 100%;
+  background: #fdfdfd;
+  border: 1px solid #e6e6e6;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  font-size: 14px;
+  .form-group .row{
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: 992px){
+      display: block;
+    }
+  }
+  input,
+  select{
+    margin: 1rem 0;
+    outline: none;
+    border-radius: 8px;
+  }
+  span {
+    text-align: center;
+    font-weight: 600;
+  }
+  .bottomRow {
+    flex-direction: row-reverse;
+    a,
+    a:hover {
+      margin: .5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  @media screen and (max-width: 992px) {
+    span,
+    input,
+    select{
+      width: 100%;
+    }
+  }
+}
+.companyDetail {
+  width: 100%;
+  .th {
+    font-weight: 600;
+  }
+
+}
+.companyList {
+  border: 1px solid #e0e0e0;
+}
+.listHeader {
+  padding: 2rem;
+  background: #f5f5f5;
+  font-weight: 600;
+}
+.tableSurface {
+  margin: 1.5rem;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  table {
+    th,
+    td{
+      text-align: center;
+      line-height: 4rem;
+      font-size: 14px!important;
+    }
+  }
+}
+.threeBtn {
+  display: flex;
+  justify-content: space-evenly;
+  min-width: 7em;
+  a,
+  a:hover{
+    color: #3379b6;
+    text-decoration: none;
+  }
+}
+.pageModel {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 14px;
+}
+.bottomInput {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 12px;
+  input {
+    width: 50px;
+    line-height: 28px;
+  }
+}

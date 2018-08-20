@@ -1,0 +1,94 @@
+.bindDefault {
+  padding-top: 1.2rem;
+  min-height: 100vh;
+  color: #fcbf2b;
+  background: #fbf3d0;
+  font-size: 20px;
+  font-weight: 600; }
+  .bindDefault .Row {
+    line-height: .4rem;
+    padding-left: .4rem;
+    margin-bottom: .1rem; }
+    .bindDefault .Row .white {
+      display: inline-block;
+      width: 60vw;
+      padding-left: .1rem;
+      border-top: 2px solid #d3aa34;
+      border-radius: 10px;
+      line-height: 0.4rem;
+      font-size: 16px;
+      color: #b8a764;
+      background: #fcd32d; }
+
+.modify img {
+  width: 36%;
+  margin-top: .3rem; }
+
+.bindOver {
+  position: absolute;
+  background: #fbf3d0;
+  min-height: 100vh; }
+  .bindOver .bindMethod {
+    display: flex;
+    margin-top: .5rem;
+    padding: .05rem 0;
+    justify-content: space-around;
+    align-items: center;
+    background: #ffe57e; }
+    .bindOver .bindMethod .bindBanner {
+      width: 47%;
+      text-align: center; }
+      .bindOver .bindMethod .bindBanner img {
+        width: 75%;
+        padding: 0.1rem; }
+    .bindOver .bindMethod .stick {
+      width: 3px;
+      height: 0.25rem;
+      background: #632a04; }
+    .bindOver .bindMethod .active {
+      border-bottom: 3px solid #e3a51c; }
+  .bindOver .bindNotice {
+    padding: .4rem 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #865834; }
+    .bindOver .bindNotice img {
+      width: 35px; }
+  .bindOver .newBind {
+    color: #fcba1a;
+    font-size: 20px;
+    text-align: center; }
+    .bindOver .newBind .Inputting {
+      display: inline-block;
+      position: relative;
+      line-height: .4rem;
+      margin: .25rem 0;
+      text-align: center; }
+      .bindOver .newBind .Inputting label {
+        margin-bottom: 0; }
+      .bindOver .newBind .Inputting input {
+        width: 65vw;
+        border: none;
+        outline: none;
+        border-top: 2px solid #d3aa34;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #b8a764;
+        background: #fcd32d; }
+      .bindOver .newBind .Inputting .pull-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        outline: none;
+        border: 2px solid #5f2500;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        background: #fcd32d; }
+  .bindOver .commitBtn {
+    margin: .3rem 0; }
+    .bindOver .commitBtn img {
+      width: 50vw; }
+
+/*# sourceMappingURL=bindInfo.css.map */

@@ -1,0 +1,87 @@
+.swap {
+  padding: 0 .1rem;
+  border-bottom: 1px solid #bbb; }
+
+.cardEdit {
+  background: #fbf3d0;
+  min-height: 100vh; }
+  .cardEdit .content {
+    overflow: hidden;
+    width: 95vw;
+    margin: .7rem auto .3rem;
+    padding: 5vw 10vw 12.5vw;
+    background: url(../images/student/idCardBG.png) no-repeat;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%; }
+    .cardEdit .content h3 {
+      margin-bottom: .2rem;
+      text-align: center;
+      color: #c66d08; }
+    .cardEdit .content .cardLeft {
+      overflow: hidden;
+      float: left;
+      width: 40%; }
+      .cardEdit .content .cardLeft .userImg {
+        display: inline-block;
+        position: relative;
+        width: 100%; }
+        .cardEdit .content .cardLeft .userImg img {
+          width: 100%; }
+        .cardEdit .content .cardLeft .userImg .cover {
+          z-index: 99;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          line-height: 118px;
+          text-align: center;
+          vertical-align: middle;
+          color: #fff;
+          background: #000;
+          opacity: .66; }
+      .cardEdit .content .cardLeft span {
+        color: #74a9f5;
+        cursor: pointer; }
+      .cardEdit .content .cardLeft .oldImage {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    .cardEdit .content .cardRight {
+      float: left;
+      width: 60%; }
+      .cardEdit .content .cardRight div {
+        display: flex;
+        margin: .1rem 0; }
+        .cardEdit .content .cardRight div span {
+          display: inline-block;
+          min-width: 3.8em; }
+        .cardEdit .content .cardRight div input,
+        .cardEdit .content .cardRight div p {
+          width: 30vw;
+          outline: none;
+          border: none;
+          border-top: 2px solid #5f2600;
+          background: #fcd32d;
+          border-radius: 8px; }
+    .cardEdit .content img {
+      border: 2px solid #a7cee7; }
+    .cardEdit .content span {
+      min-width: 4em;
+      padding: .05rem;
+      display: block; }
+  .cardEdit .submitBtn {
+    display: block;
+    transform: scale(0.8); }
+    .cardEdit .submitBtn button {
+      padding: 0; }
+  .cardEdit .weui-uploader__files .weui-uploader__file {
+    background-size: contain; }
+  .cardEdit .hide {
+    display: none; }
+
+/*# sourceMappingURL=studentEdit.css.map */

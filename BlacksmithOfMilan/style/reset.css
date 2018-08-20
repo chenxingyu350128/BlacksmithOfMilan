@@ -1,0 +1,19 @@
+html {
+    font-size: 625%;
+}
+body {
+    font-size: 14px;
+    background: #f2f2f2;
+}
+p {
+    margin-bottom: 0;
+    padding: .05rem;
+}
+a:hover {
+    text-decoration: none;
+}
+ul,
+li{
+    padding: 0;
+    margin: 0;
+}

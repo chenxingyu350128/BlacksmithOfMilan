@@ -1,0 +1,42 @@
+<div class="moduleManage" style="padding-top: 20px">
+        <div class="Artcle"> 
+            <div class="add">
+                <span>模块管理（拖动列表，拖动后就算编辑）</span><button ng-model=" addtext" ng-click="addText()">新增</button>
+            </div>
+            <table class="td">
+                <tr>
+                    <td class="td1">自增长id</td>
+                    <td class="td2">名称</td>
+                    <td class="td3">模块对应url</td>
+                    <td class="td4">父模块ID</td>
+             
+                    <td class="td7">更新ID</td>
+           
+                    <td class="td8">操作</td>
+                </tr>
+            </table>
+            <table class="tf" ng-repeat="x in modulelist">
+                <tr>
+                    <td class="td1">{{$index+1}}</td>
+                    <td class="td2">
+                        {{x.source}}
+                    </td>
+                    <td class="td3">{{x.url}}</td>
+                    <td class="td4">{{x.parentId }}</td>
+              
+                    <td class="td7">{{x.id }}</td>
+                   
+                    <td class="td8">
+                  
+                        <button class="button2" ng-click="onlineEditor(x.id)">编辑</button>
+                        <button class="button3" ng-click="delete(x.id)">删除</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="page">
+                <ul uib-pagination total-items="bigTotalItems" items-per-page="5" previous-text="上一页" next-text="下一页" ng-model="bigCurrentPage" ng-change="pageChanged()" max-size="maxSize" class="pagination-sm" boundary-link-numbers="true" rotate="false"></ul>
+                <div>去第<input type="text" style="width: 70px;height: 30px;margin: 20px;" ng-change="changepage()"  ng-model="pagenum"><button ng-click="entry()">确定</button></div>            
+            </div>
+    </div>
+    

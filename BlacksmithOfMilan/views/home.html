@@ -1,0 +1,19 @@
+<div class="homepage">
+    <div class="map">
+        <div ui-sref="student({id:1})" class="idCard"></div>
+        <div ui-sref="sign({id:1})" class="signIcon"></div>
+        <!--获取视频时长的介质，勿删-->
+        <img src="../images/home/pureBG1.png" alt="" class="mainMap">
+        <div class="innerMap">
+            <img ng-click="vm.unfinished()" src="../images/home/restroom.png" alt="" class="restroom">
+            <img ng-click="vm.unfinished()" src="../images/home/building.png" alt="" class="building">
+            <img ui-sref="videoList" src="../images/home/video.png" alt="image missing" class="video">
+            <img ui-sref="articleList" src="../images/home/article.png" alt="image missing" class="article">
+            <img ng-click="vm.unfinished()" src="../images/home/wishTree.png" alt="image missing" class="wishTree">
+            <img ng-click="vm.unfinished()" src="../images/home/notice.png" alt="image missing" class="notice">
+            <img ng-click="vm.unfinished()" src="../images/home/stadium.png" alt="image missing" class="stadium">
+            <img ng-click="vm.unfinished()" src="../images/home/shop.png" alt="image missing" class="shop">
+        </div>
+    </div>
+    <div ng-class="{forbid: vm.forbid}"></div>
+</div>

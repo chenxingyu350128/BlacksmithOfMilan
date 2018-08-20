@@ -1,0 +1,65 @@
+<div>
+    <form  name="myForm" >
+        <div class="search">
+            <div> 
+                标&emsp;题：<input ng-model="text1" ng-change="change1text()" type="text">
+                &emsp;作&emsp;者：<input ng-model="text2" type="text">
+            </div>
+            <div> 点赞数：<input ng-change="bian()" ng-model="minLike" type="text">&emsp;&emsp;—&emsp;&emsp;<input ng-model="maxLike" type="text"></div>
+            <div> 收藏数：<input ng-model="minCollection" type="text">&emsp;&emsp;—&emsp;&emsp;<input ng-model="maxCollection" type="text"></div>
+            <div>分&emsp;类：
+                <select  ng-model="vmtype" >
+                        <option ng-repeat="x in  types" value="{{x.numb}}">{{x.site}}</option>
+                </select>
+                <select  ng-model="vmstatus">
+                        <option ng-repeat="x in  sites" value="{{x.numb}}">{{x.site}}</option>
+                    
+                </select>
+                <button ng-model="Rest"  ng-click="clickRest()" class="btn btn-warning">重置</button>
+                <button ng-model="search" ng-click="onsearch()" class="btn btn-success">搜索</button>
+            </div>
+        </div>
+
+        <div class="Artcle"> 
+            <div class="add">
+                <span>文章列表（拖动列表，拖动后就算编辑）</span><button ng-model=" addtext" ng-click="addText()">新增文章</button>
+            </div>
+            <table class="td">
+                <td class="td1">序号</td>
+                <td class="td2">图片</td>
+                <td class="td3">标题</td>
+                <td class="td4">类型</td>
+                <td class="td5">作者</td>
+                <td class="td6">收藏</td>
+                <td class="td7">点赞</td>
+                <td class="td9">状态 </td>
+                <td class="td8">
+                    操作
+                </td>
+            </table>
+            <table ng-repeat="x in list">
+                <tr>
+                    <td class="td1">{{$index+1}}</td>
+                    <td class="td2">
+                        <img src="{{x.cover}}" style="max-width: 100px;">
+                    </td>
+                    <td class="td3">{{x.title}}</td>
+                    <td class="td4">{{x.type | typeCode}}</td>
+                    <td class="td5">{{x.author}}</td>
+                    <td class="td6">{{x.collection}}</td>
+                    <td class="td7">{{x.userLike}}</td>
+                    <td class="td9">{{x.status |statusCode}} </td>
+                    <td class="td8">
+                        <button class="button1" ng-click="online(x.id,x.status)">{{x.status|buttonCode}}</button>
+                        <button class="button2" ng-click="onlineEditor(x.id)">编辑</button>
+                        <button class="button3" ng-click="watch(x.id,x.author)">查看</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="page">
+            <ul uib-pagination total-items="bigTotalItems" previous-text="上一页" next-text="下一页" ng-model="bigCurrentPage" ng-change="pageChanged()" max-size="maxSize" class="pagination-sm" boundary-link-numbers="true" rotate="false"></ul>
+            <div>去第<input type="text" style="width: 70px;height: 30px;margin: 20px;" ng-change="changepage()" ng-model="pagenum"><button ng-click="entry()">确定</button></div>
+        </div>
+    </form>
+</div>
